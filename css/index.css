@@ -1,10 +1,20 @@
 @charset 'utf-8';
 /* 定义项目的公共颜色 */
 /* 定义字体大小 */
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.fb {
+  font-weight: bold;
+}
 /* 公共样式 */
 body {
   background-color: #f4f4f4;
   font-size: 14px;
+  margin-bottom: 100px;
 }
 /* 定义可视区域 */
 .wp {
@@ -18,6 +28,20 @@ body {
   white-space: nowrap;
 }
 /* 定义圆角 */
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -28,4 +52,161 @@ a:hover {
 .top-bar {
   line-height: 37px;
   color: #9c9c9c;
+}
+.top-bar .nav li {
+  float: left;
+  height: 17px;
+  line-height: 17px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.top-bar .nav li:not(:first-child) {
+  border-left: 1px solid #9c9c9c;
+}
+.search-bar {
+  background-color: #fff;
+  line-height: 106px;
+}
+.search-bar .logo {
+  margin: 20px 0;
+}
+.search-bar .search-box {
+  height: 46px;
+  line-height: 46px;
+  margin: 30px 0 30px 154px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.search-bar .search-box input {
+  font-size: 16px;
+  width: 346px;
+  height: 100%;
+  border: 2px solid #2bb404;
+  padding: 15px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.search-bar .search-box a {
+  display: block;
+  background-color: #2bb404;
+  color: #fff;
+  font-size: 23px;
+  padding: 0 20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.search-bar .login-box {
+  font-size: 16px;
+}
+.search-bar .login-box > * {
+  margin: 0 4px;
+}
+.search-bar .login-box .iconfont {
+  color: #2bb404;
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+}
+.search-bar .login-box .login {
+  border: 1px solid #2bb404;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #2bb404;
+  padding: 2px 16px;
+  margin: 0 4px;
+}
+.nav-bar {
+  line-height: 46px;
+  background-color: #2bb404;
+}
+.nav-bar li {
+  float: left;
+  padding: 0 20px;
+  color: #fff;
+}
+.nav-bar li a:hover {
+  color: inherit;
+}
+.advertisement {
+  margin: 20px auto;
+}
+.advertisement .ad-left {
+  width: 721px;
+  height: 320px;
+  border: 4px solid #2bb404;
+}
+.advertisement .ad-bottom {
+  margin: 20px 0;
+}
+/* 主体内容区 */
+.main-section .top-nav {
+  border-bottom: 2px solid #2bb404;
+}
+.main-section .top-nav li {
+  position: relative;
+  float: left;
+  font-size: 18px;
+  line-height: 60px;
+  margin-right: 30px;
+}
+.main-section .top-nav li.active {
+  color: #2bb404;
+}
+.main-section .top-nav li.active::after {
+  content: '▲';
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  margin-left: -8.9px;
+}
+.main-section .main-box {
+  height: 524px;
+  border: 1px dotted #9c9c9c;
+  background-color: #fff;
+}
+.main-section .main-box .main-left {
+  width: 216px;
+  height: 100%;
+  padding: 10px 0 20px;
+  border-right: 1px dotted #9c9c9c;
+}
+.main-section .main-box .main-left p {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.main-section .main-box .main-left li {
+  float: left;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.main-section .main-box .main-left li:not(:last-child) {
+  border-right: 1px solid #9c9c9c;
+}
+.main-section .main-box .main-right {
+  width: 982px;
+  padding: 20px 20px 0 20px;
+}
+.main-section .main-box .main-right .city-tabs li {
+  float: left;
+  margin-right: 20px;
+  color: #2bb404;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+}
+.main-section .main-box .main-right .city-tabs li a {
+  display: inline-block;
+  padding: 4px 10px;
+}
+.main-section .main-box .main-right .city-tabs li.active {
+  background-color: #2bb404;
+  color: #fff;
+}
+.main-section .main-box .main-right .city-tabs li.active a:hover {
+  color: inherit;
+}
+.main-section .main-box .main-right .city-tabs li.more {
+  float: right;
 }
