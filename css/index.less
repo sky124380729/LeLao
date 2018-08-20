@@ -143,6 +143,7 @@
             width: 982px;
             padding: 20px 20px 0 20px;
             .city-tabs {
+                margin-bottom: 20px;
                 li {
                     .fl;
                     margin-right: 20px;
@@ -162,6 +163,24 @@
                     &.more {
                         float: right;
                     }
+                }
+            }
+        }
+        .main-list {
+            .list-box {
+                .fl;
+                &:not(:nth-child(4n)) {
+                    margin-right: 7px;
+                }
+                img {
+                    width: 230px;
+                    height: 151px;
+                }
+                .des {
+                    border: 1px solid @grey;
+                    border-top: none;
+                    padding:5px 10px;
+                    line-height: 31px;
                 }
             }
         }

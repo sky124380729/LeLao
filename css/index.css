@@ -10,6 +10,12 @@
 .fb {
   font-weight: bold;
 }
+.red {
+  color: #ff001e;
+}
+.grey {
+  color: #9c9c9c;
+}
 /* 公共样式 */
 body {
   background-color: #f4f4f4;
@@ -188,6 +194,9 @@ a:hover {
   width: 982px;
   padding: 20px 20px 0 20px;
 }
+.main-section .main-box .main-right .city-tabs {
+  margin-bottom: 20px;
+}
 .main-section .main-box .main-right .city-tabs li {
   float: left;
   margin-right: 20px;
@@ -209,4 +218,20 @@ a:hover {
 }
 .main-section .main-box .main-right .city-tabs li.more {
   float: right;
+}
+.main-section .main-box .main-list .list-box {
+  float: left;
+}
+.main-section .main-box .main-list .list-box:not(:nth-child(4n)) {
+  margin-right: 7px;
+}
+.main-section .main-box .main-list .list-box img {
+  width: 230px;
+  height: 151px;
+}
+.main-section .main-box .main-list .list-box .des {
+  border: 1px solid #9c9c9c;
+  border-top: none;
+  padding: 5px 10px;
+  line-height: 31px;
 }

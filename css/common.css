@@ -9,6 +9,12 @@
 .fb {
   font-weight: bold;
 }
+.red {
+  color: #ff001e;
+}
+.grey {
+  color: #9c9c9c;
+}
 /* 公共样式 */
 body {
   background-color: #f4f4f4;
