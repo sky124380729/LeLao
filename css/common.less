@@ -24,10 +24,28 @@
 	color: #9c9c9c;
 }
 
+/* 超出省略号 */
+.textwp	{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/* 居中 */
+.center {
+	text-align: center;
+}
+
+/* 去掉边框 */
+.no-border {
+	border:none;
+}
+
 
 /* 公共样式 */
 body {
     background-color: #f4f4f4;
+	font-family: 'Microsoft YaHei';
 	font-size: 14px;
 	margin-bottom: 100px;
 }
@@ -39,12 +57,7 @@ body {
 	margin: 0 auto;
 }
 
-/* 超出省略号 */
-.textwp	{
-	overflow: hidden;
-	text-overflow:ellipsis;
-	white-space: nowrap;
-}
+
 
 /* 定义圆角 */
 .brs(@radius:4px) {

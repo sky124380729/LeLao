@@ -16,9 +16,24 @@
 .grey {
   color: #9c9c9c;
 }
+/* 超出省略号 */
+.textwp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 居中 */
+.center {
+  text-align: center;
+}
+/* 去掉边框 */
+.no-border {
+  border: none;
+}
 /* 公共样式 */
 body {
   background-color: #f4f4f4;
+  font-family: 'Microsoft YaHei';
   font-size: 14px;
   margin-bottom: 100px;
 }
@@ -26,12 +41,6 @@ body {
 .wp {
   width: 1200px;
   margin: 0 auto;
-}
-/* 超出省略号 */
-.textwp {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 /* 定义圆角 */
 /* 浮动 */
@@ -146,6 +155,118 @@ a:hover {
 .advertisement .ad-bottom {
   margin: 20px 0;
 }
+.advertisement .search-tabs .nav-list {
+  width: 176px;
+  height: 78px;
+  padding: 18px;
+  background-color: #2bb404;
+  color: #fff;
+}
+.advertisement .search-tabs .nav-list:not(:last-child) {
+  border-bottom: 1px solid #9c9c9c;
+}
+.advertisement .search-tabs .nav-list:hover,
+.advertisement .search-tabs .nav-list.active {
+  background-color: #fff;
+  color: #2bb404;
+}
+.advertisement .search-tabs .nav-list .nav-list-detail {
+  float: left;
+  line-height: 40px;
+  margin-right: 10px;
+}
+.advertisement .search-detail {
+  width: 537px;
+  height: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+}
+.advertisement .search-detail .blocks {
+  padding: 10px 20px;
+  border-bottom: 0.5px dashed #2bb404;
+}
+.advertisement .search-detail .search-box {
+  margin-top: 15px;
+}
+.advertisement .search-detail .search-box input {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  width: 236px;
+  height: 34px;
+  padding: 10px;
+  border: 1px solid #9c9c9c;
+}
+.advertisement .search-detail .search-box a {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 10px 35px;
+  background-color: #2bb404;
+  color: #fff;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.advertisement .search-detail h2,
+.advertisement .search-detail h4 {
+  line-height: 40px;
+}
+.advertisement .search-detail .list {
+  float: left;
+  margin-right: 15px;
+  line-height: 25px;
+}
+.advertisement .search-detail .steps {
+  position: relative;
+  width: 25%;
+  float: left;
+}
+.advertisement .search-detail .steps .icon-box {
+  width: 71px;
+  height: 71px;
+  margin: 0 auto;
+  line-height: 71px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border: 1px solid #2bb404;
+  color: #2bb404;
+}
+.advertisement .search-detail .steps .icon-box .iconfont {
+  font-size: 28px;
+}
+.advertisement .search-detail .steps p {
+  margin-top: 10px;
+  text-align: center;
+}
+.advertisement .search-detail .steps:not(:last-child)::after {
+  content: '>';
+  position: absolute;
+  top: 17px;
+  right: -14px;
+  font-size: 36px;
+  font-weight: 100;
+  color: #bbb;
+}
+.advertisement .search-detail .consult-box h2 {
+  line-height: 60px;
+}
+.advertisement .search-detail .consult-box .tel {
+  margin: 20px 0;
+  line-height: 40px;
+  border-bottom: 0.5px dashed #2bb404;
+}
+.advertisement .search-detail .consult-box .tel .iconfont {
+  font-size: 24px;
+  color: #2bb404;
+  position: relative;
+  top: 2px;
+}
+.advertisement .search-detail .consult-box .name {
+  width: 94px;
+  margin: 0 10px;
+}
 /* 主体内容区 */
 .main-section .top-nav {
   border-bottom: 2px solid #2bb404;
@@ -225,12 +346,17 @@ a:hover {
 .main-section .main-box .main-list .list-box:not(:nth-child(4n)) {
   margin-right: 7px;
 }
+.main-section .main-box .main-list .list-box:hover {
+  box-shadow: 0 2px 8px rgba(238, 136, 0, 0.3);
+  transform: scale(1.01);
+  transition: all 0.5s;
+}
 .main-section .main-box .main-list .list-box img {
   width: 230px;
   height: 151px;
 }
 .main-section .main-box .main-list .list-box .des {
-  border: 1px solid #9c9c9c;
+  border: 1px solid #e4e3e3;
   border-top: none;
   padding: 5px 10px;
   line-height: 31px;
