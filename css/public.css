@@ -1,0 +1,270 @@
+@charset 'uff-8';
+/* 定义项目的公共颜色 */
+/* 定义字体大小 */
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f18 {
+  font-size: 18px;
+}
+.fb {
+  font-weight: bold;
+}
+.red {
+  color: #ff001e;
+}
+.green {
+  color: #2bb404;
+}
+.grey {
+  color: #9c9c9c;
+}
+.gray {
+  color: #ebebeb;
+}
+/* 行高 */
+.line-20 {
+  line-height: 20px;
+}
+.line-30 {
+  line-height: 30px;
+}
+.line-40 {
+  line-height: 40px;
+}
+.line-60 {
+  line-height: 60px;
+}
+/* 超出省略号 */
+.textwp {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* 居中 */
+.center {
+  text-align: center;
+}
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+/* 去掉边框 */
+.no-border {
+  border: none;
+}
+/* 公共样式 */
+body {
+  background-color: #f4f4f4;
+  font-family: 'Microsoft YaHei';
+  font-size: 14px;
+}
+/* 定义可视区域 */
+.wp {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* 定义圆角 */
+/* 浮动 */
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #2bb404;
+}
+/* 公共头部 */
+.top-bar {
+  line-height: 37px;
+  color: #9c9c9c;
+}
+.top-bar .nav li {
+  float: left;
+  height: 17px;
+  line-height: 17px;
+  margin: 10px 0;
+  padding: 0 10px;
+}
+.top-bar .nav li:not(:first-child) {
+  border-left: 1px solid #9c9c9c;
+}
+.search-bar {
+  background-color: #fff;
+  line-height: 106px;
+}
+.search-bar .logo {
+  margin: 20px 0;
+}
+.search-bar .search-box {
+  height: 46px;
+  line-height: 46px;
+  margin: 30px 0 30px 154px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+}
+.search-bar .search-box input {
+  font-size: 16px;
+  width: 346px;
+  height: 100%;
+  border: 2px solid #2bb404;
+  padding: 15px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.search-bar .search-box a {
+  display: block;
+  background-color: #2bb404;
+  color: #fff;
+  font-size: 23px;
+  padding: 0 20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.search-bar .login-box {
+  font-size: 16px;
+}
+.search-bar .login-box > * {
+  margin: 0 4px;
+}
+.search-bar .login-box .iconfont {
+  color: #2bb404;
+  font-size: 24px;
+  position: relative;
+  top: 2px;
+}
+.search-bar .login-box .login {
+  border: 1px solid #2bb404;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #2bb404;
+  padding: 2px 16px;
+  margin: 0 4px;
+}
+.nav-bar {
+  line-height: 46px;
+  background-color: #2bb404;
+}
+.nav-bar li {
+  float: left;
+  padding: 0 20px;
+  color: #fff;
+}
+.nav-bar li a:hover {
+  color: inherit;
+}
+/* 部分内容 */
+.main-section .top-nav {
+  padding: 0 6px;
+  border-bottom: 2px solid #2bb404;
+}
+.main-section .top-nav li {
+  position: relative;
+  float: left;
+  font-size: 18px;
+  line-height: 60px;
+  margin-right: 30px;
+}
+.main-section .top-nav li.active {
+  color: #2bb404;
+}
+.main-section .top-nav li.active::after {
+  content: '▲';
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  margin-left: -8.9px;
+}
+.main-section .nav-box {
+  background-color: #fff;
+  border: 1px dotted #9c9c9c;
+  border-bottom: none;
+}
+.main-section .nav-box .nav-box-list {
+  padding: 10px 20px;
+  line-height: 30px;
+  border-bottom: 1px dotted #9c9c9c;
+}
+.main-section .nav-box .nav-box-list .nav-list-bar {
+  width: 60px;
+  text-align-last: justify;
+  margin-right: 20px;
+}
+.main-section .nav-box .nav-box-list .nav-list-bar + ul {
+  margin-left: 80px;
+}
+.main-section .nav-box .nav-box-list li {
+  float: left;
+  color: #9c9c9c;
+  margin-right: 20px;
+}
+/* 公共底部 */
+footer {
+  width: 100%;
+  height: 546px;
+  margin-top: 60px;
+  border-top: 1px dotted #9c9c9c;
+  background-color: #fff;
+}
+footer .slogan {
+  height: 175px;
+  padding: 32px;
+  border-bottom: 1px dotted #9c9c9c;
+}
+footer .slogan li {
+  float: left;
+  width: 25%;
+}
+footer .slogan li h2 {
+  font-size: 60px;
+  color: #2bb404;
+  font-weight: 100;
+}
+footer .slogan li .des {
+  font-size: 18px;
+  color: #9c9c9c;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+}
+footer .about {
+  padding-top: 30px;
+  color: #9c9c9c;
+}
+footer .about dl {
+  width: 18%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+}
+footer .about dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+footer .about .contract dt {
+  font-size: 22px;
+}
+footer .about .contract .contract-button {
+  background-color: #2bb404;
+  color: #fff;
+  padding: 4px 8px;
+}
