@@ -1,5 +1,8 @@
 /* 定义项目的公共颜色 */
 /* 定义字体大小 */
+.f14 {
+  font-size: 14px;
+}
 .f16 {
   font-size: 16px;
 }
@@ -12,8 +15,27 @@
 .red {
   color: #ff001e;
 }
+.green {
+  color: #2bb404;
+}
 .grey {
   color: #9c9c9c;
+}
+.gray {
+  color: #ebebeb;
+}
+/* 行高 */
+.line-20 {
+  line-height: 20px;
+}
+.line-30 {
+  line-height: 30px;
+}
+.line-40 {
+  line-height: 40px;
+}
+.line-60 {
+  line-height: 60px;
 }
 /* 超出省略号 */
 .textwp {
@@ -25,6 +47,12 @@
 .center {
   text-align: center;
 }
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
 /* 去掉边框 */
 .no-border {
   border: none;
@@ -34,7 +62,6 @@ body {
   background-color: #f4f4f4;
   font-family: 'Microsoft YaHei';
   font-size: 14px;
-  margin-bottom: 100px;
 }
 /* 定义可视区域 */
 .wp {

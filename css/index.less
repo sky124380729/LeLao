@@ -207,6 +207,7 @@
 /* 主体内容区 */
 .main-section {
     .top-nav {
+        padding: 0 6px;
         border-bottom: 2px solid @green;
         li {
             position: relative;
@@ -279,17 +280,14 @@
         .main-list {
             .list-box {
                 .fl;
+                margin-bottom: 10px;
                 &:not(:nth-child(4n)) {
                     margin-right: 7px;
                 }
                 &:hover {
                     box-shadow: 0 2px 8px rgba(238,136,0,.3);
                     transform: scale(1.01);
-                    transition: all 0.5s;
-                }
-                img {
-                    width: 230px;
-                    height: 151px;
+                    transition: all 0.3s;
                 }
                 .des {
                     border: 1px solid #e4e3e3;
@@ -297,6 +295,171 @@
                     padding:5px 10px;
                     line-height: 31px;
                 }
+                img {
+                    width: 230px;
+                    height: 151px;
+                }
+                .star {
+                    color: #ff7800;
+                }
+            }  
+
+            .ad-main {
+                width: 712px;
+                .list-box:not(:nth-child(3n)) {
+                    margin-right: 7px;
+                }
+            }
+
+            .person img {
+                width: 230px;
+                height: 230px;
+            }      
+        }
+        .ads img {
+            width: 228px;
+            height: 435px;
+        }
+    }
+    .info-box {
+        background-color: #fff;
+        display: flex;
+        height: 448px;
+        padding: 20px 0;
+        border:1px dotted @grey;
+        .info-left {
+            flex: 3;
+            border-right: 1px dashed @grey;
+            padding:0 20px 0 20px;
+            .info-main {
+                img {
+                    width: 142px;
+                    height: 142px;
+                }
+            }
+            .info-main-box {
+                width: 253px;
+            }
+            .info-list {
+                margin-top: 20px;
+                li {
+                    position: relative;
+                    padding-left: 20px;
+                    line-height: 24px;
+                    a {
+                        display: inline-block;
+                        width: 300px;
+                    }
+                    &:before {
+                        content: '●';
+                        position: absolute;
+                        left: 0;
+                        color: @gray;
+                    }
+                }
+            }
+        }
+        .info-right {
+            flex: 2;
+            padding:0 20px 0 20px;
+            .hot-article-list {
+                width: 260px;
+                line-height: 30px;
+            }
+            .category a.active {
+                .green;
+            }
+        }
+    }
+    .brand-box {
+        padding-bottom: 20px;
+        background-color: #fff;
+        border:1px dotted @grey;
+        li {
+            .fl;
+            width: 11.1%;
+            margin: 20px 0;
+            img {
+                width: 109px;
+                height: 83px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .nav-box {
+        background-color: #fff;
+        border: 1px dotted @grey;
+        border-bottom: none;
+        .nav-box-list {
+            padding: 10px 20px;
+            line-height: 30px;
+            border-bottom: 1px dotted @grey;
+            .nav-list-bar {
+                width: 60px;
+                text-align-last: justify;
+                margin-right: 20px;
+                &+ul {
+                    margin-left: 80px;
+                }
+            }
+            li {
+                .fl;
+                color: @grey;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 546px;
+    margin-top: 60px;
+    border-top: 1px dotted @grey;
+    background-color: #fff;
+    .slogan {
+        height: 175px;
+        padding: 32px;
+        border-bottom: 1px dotted @grey;
+        li {
+            .fl;
+            width: 25%;
+            h2{
+                font-size: 60px;
+                color: @green;
+                font-weight: 100;
+            }
+            .des {
+                .f18;
+                .grey;
+                line-height: 40px;
+                letter-spacing: 0.2em;
+            }
+        }
+    }
+    .about {
+        padding-top: 30px;
+        color: @grey;
+        dl {
+            width: 18%;
+            .center;
+            .f14;
+            line-height: 30px;
+            dt {
+                .f16;
+                .fb;
+                line-height: 40px;
+            }
+        }
+        .contract {
+            dt {
+                font-size: 22px;
+            }
+            .contract-button {
+                background-color: @green;
+                color:#fff;
+                padding: 4px 8px;
             }
         }
     }

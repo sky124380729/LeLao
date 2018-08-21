@@ -1,6 +1,9 @@
 @charset 'utf-8';
 /* 定义项目的公共颜色 */
 /* 定义字体大小 */
+.f14 {
+  font-size: 14px;
+}
 .f16 {
   font-size: 16px;
 }
@@ -13,8 +16,27 @@
 .red {
   color: #ff001e;
 }
+.green {
+  color: #2bb404;
+}
 .grey {
   color: #9c9c9c;
+}
+.gray {
+  color: #ebebeb;
+}
+/* 行高 */
+.line-20 {
+  line-height: 20px;
+}
+.line-30 {
+  line-height: 30px;
+}
+.line-40 {
+  line-height: 40px;
+}
+.line-60 {
+  line-height: 60px;
 }
 /* 超出省略号 */
 .textwp {
@@ -26,6 +48,12 @@
 .center {
   text-align: center;
 }
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
 /* 去掉边框 */
 .no-border {
   border: none;
@@ -35,7 +63,6 @@ body {
   background-color: #f4f4f4;
   font-family: 'Microsoft YaHei';
   font-size: 14px;
-  margin-bottom: 100px;
 }
 /* 定义可视区域 */
 .wp {
@@ -269,6 +296,7 @@ a:hover {
 }
 /* 主体内容区 */
 .main-section .top-nav {
+  padding: 0 6px;
   border-bottom: 2px solid #2bb404;
 }
 .main-section .top-nav li {
@@ -342,6 +370,7 @@ a:hover {
 }
 .main-section .main-box .main-list .list-box {
   float: left;
+  margin-bottom: 10px;
 }
 .main-section .main-box .main-list .list-box:not(:nth-child(4n)) {
   margin-right: 7px;
@@ -349,15 +378,168 @@ a:hover {
 .main-section .main-box .main-list .list-box:hover {
   box-shadow: 0 2px 8px rgba(238, 136, 0, 0.3);
   transform: scale(1.01);
-  transition: all 0.5s;
-}
-.main-section .main-box .main-list .list-box img {
-  width: 230px;
-  height: 151px;
+  transition: all 0.3s;
 }
 .main-section .main-box .main-list .list-box .des {
   border: 1px solid #e4e3e3;
   border-top: none;
   padding: 5px 10px;
   line-height: 31px;
+}
+.main-section .main-box .main-list .list-box img {
+  width: 230px;
+  height: 151px;
+}
+.main-section .main-box .main-list .list-box .star {
+  color: #ff7800;
+}
+.main-section .main-box .main-list .ad-main {
+  width: 712px;
+}
+.main-section .main-box .main-list .ad-main .list-box:not(:nth-child(3n)) {
+  margin-right: 7px;
+}
+.main-section .main-box .main-list .person img {
+  width: 230px;
+  height: 230px;
+}
+.main-section .main-box .ads img {
+  width: 228px;
+  height: 435px;
+}
+.main-section .info-box {
+  background-color: #fff;
+  display: flex;
+  height: 448px;
+  padding: 20px 0;
+  border: 1px dotted #9c9c9c;
+}
+.main-section .info-box .info-left {
+  flex: 3;
+  border-right: 1px dashed #9c9c9c;
+  padding: 0 20px 0 20px;
+}
+.main-section .info-box .info-left .info-main img {
+  width: 142px;
+  height: 142px;
+}
+.main-section .info-box .info-left .info-main-box {
+  width: 253px;
+}
+.main-section .info-box .info-left .info-list {
+  margin-top: 20px;
+}
+.main-section .info-box .info-left .info-list li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 24px;
+}
+.main-section .info-box .info-left .info-list li a {
+  display: inline-block;
+  width: 300px;
+}
+.main-section .info-box .info-left .info-list li:before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: #ebebeb;
+}
+.main-section .info-box .info-right {
+  flex: 2;
+  padding: 0 20px 0 20px;
+}
+.main-section .info-box .info-right .hot-article-list {
+  width: 260px;
+  line-height: 30px;
+}
+.main-section .info-box .info-right .category a.active {
+  color: #2bb404;
+}
+.main-section .brand-box {
+  padding-bottom: 20px;
+  background-color: #fff;
+  border: 1px dotted #9c9c9c;
+}
+.main-section .brand-box li {
+  float: left;
+  width: 11.1%;
+  margin: 20px 0;
+}
+.main-section .brand-box li img {
+  width: 109px;
+  height: 83px;
+  margin: 0 auto;
+}
+.main-section .nav-box {
+  background-color: #fff;
+  border: 1px dotted #9c9c9c;
+  border-bottom: none;
+}
+.main-section .nav-box .nav-box-list {
+  padding: 10px 20px;
+  line-height: 30px;
+  border-bottom: 1px dotted #9c9c9c;
+}
+.main-section .nav-box .nav-box-list .nav-list-bar {
+  width: 60px;
+  text-align-last: justify;
+  margin-right: 20px;
+}
+.main-section .nav-box .nav-box-list .nav-list-bar + ul {
+  margin-left: 80px;
+}
+.main-section .nav-box .nav-box-list li {
+  float: left;
+  color: #9c9c9c;
+  margin-right: 20px;
+}
+footer {
+  width: 100%;
+  height: 546px;
+  margin-top: 60px;
+  border-top: 1px dotted #9c9c9c;
+  background-color: #fff;
+}
+footer .slogan {
+  height: 175px;
+  padding: 32px;
+  border-bottom: 1px dotted #9c9c9c;
+}
+footer .slogan li {
+  float: left;
+  width: 25%;
+}
+footer .slogan li h2 {
+  font-size: 60px;
+  color: #2bb404;
+  font-weight: 100;
+}
+footer .slogan li .des {
+  font-size: 18px;
+  color: #9c9c9c;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+}
+footer .about {
+  padding-top: 30px;
+  color: #9c9c9c;
+}
+footer .about dl {
+  width: 18%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+}
+footer .about dl dt {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 40px;
+}
+footer .about .contract dt {
+  font-size: 22px;
+}
+footer .about .contract .contract-button {
+  background-color: #2bb404;
+  color: #fff;
+  padding: 4px 8px;
 }
