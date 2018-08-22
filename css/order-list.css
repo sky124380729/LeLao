@@ -534,3 +534,13 @@ body {
   background-color: #ededed;
   margin: 20px 0;
 }
+.order-list .recommend-box .info-list li {
+  float: left;
+  text-align: center;
+  width: 50%;
+  line-height: 40px;
+}
+.order-list .recommend-box .info-list li span {
+  font-size: 30px;
+  font-weight: bold;
+}
