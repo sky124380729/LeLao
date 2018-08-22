@@ -16,7 +16,7 @@
   color: #ff001e;
 }
 .green {
-  color: #2bb404;
+  color: pink;
 }
 .grey {
   color: #9c9c9c;
@@ -24,15 +24,24 @@
 .gray {
   color: #ebebeb;
 }
+.orange {
+  color: #ff9d12;
+}
 /* 行高 */
 .line-20 {
   line-height: 20px;
+}
+.line-25 {
+  line-height: 25px;
 }
 .line-30 {
   line-height: 30px;
 }
 .line-40 {
   line-height: 40px;
+}
+.line-50 {
+  line-height: 50px;
 }
 .line-60 {
   line-height: 60px;
@@ -88,5 +97,23 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2bb404;
+  color: pink;
+}
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #888686;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked::after {
+  content: '✔';
+  position: absolute;
+  left: 2px;
+  top: -2px;
+  color: pink;
 }

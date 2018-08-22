@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/order-list.css">
     <link rel="stylesheet" href="https://at.alicdn.com/t/font_801047_aofjgcudoun.css">
 </head>
 
@@ -64,677 +64,258 @@
         </div>
     </div>
 
-    <!-- 筛选以及广告 -->
-    <div class="advertisement wp">
-        <div class="ad-top clearfix">
-            <div class="ad-left fl clearfix">
-                <div class="search-tabs fl">
-                    <ul>
-                        <li class="nav-list">
-                            <h4 class="f18">机构养老</h4>
-                            <ul>
-                                <li class="nav-list-detail"><a href="#">养老院&emsp;|</a></li>
-                                <li class="nav-list-detail"><a href="#">护理院&emsp;|</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-list">
-                            <h4 class="f18">社区/居家养老</h4>
-                            <ul>
-                                <li class="nav-list-detail"><a href="#">养老院&emsp;|</a></li>
-                                <li class="nav-list-detail"><a href="#">护理院&emsp;|</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-list">
-                            <h4 class="f18">旅居养老</h4>
-                            <ul>
-                                <li class="nav-list-detail"><a href="#">养老院&emsp;|</a></li>
-                                <li class="nav-list-detail"><a href="#">护理院&emsp;|</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-list active">
-                            <h4 class="f18">定制养老方案</h4>
-                            <ul>
-                                <li class="nav-list-detail"><a href="#">养老院&emsp;|</a></li>
-                                <li class="nav-list-detail"><a href="#">护理院&emsp;|</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
 
-                <div class="search-detail fr" style="display:none;">
-                    <div class="blocks">
-                        <h4 class="f18">城市</h4>
-                        <ul class="clearfix">
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                            <li class="list"><a href="#">北京</a></li>
-                        </ul>
-                    </div>
-                    <div class="blocks">
-                        <h4 class="f18">机构类型</h4>
-                        <ul class="clearfix">
-                            <li class="list"><a href="#">综合性养老机构</a></li>
-                            <li class="list"><a href="#">养老照料中心</a></li>
-                            <li class="list"><a href="#">护理院</a></li>
-                            <li class="list"><a href="#">失能/认知症专护</a></li>
-                            <li class="list"><a href="#">退休社区(CCRC)</a></li>
-                        </ul>
-                    </div>
-                    <div class="blocks search-box no-border">
-                        <input type="text" placeholder="请输入城市/养老院">
-                        <a href="javascript:void(0)">搜索</a>
-                    </div>
-                </div>
 
-                <div class="search-detail fr">
-                    <div class="consult-box">
-                        <h2 class="f18 center">专业养老顾问为您选择最佳养老服务</h2>
-                        <ul class="clearfix">
-                            <li class="steps">
-                                <div class="icon-box">
-                                    <i class="iconfont icon-bi"></i>
-                                </div>
-                                <p>请填写老人信息</p>
-                            </li>
-                            <li class="steps">
-                                <div class="icon-box">
-                                    <i class="iconfont icon-info"></i>
-                                </div>
-                                <p>养老顾问评估</p>
-                            </li>
-                            <li class="steps">
-                                <div class="icon-box">
-                                    <i class="iconfont icon-house"></i>
-                                </div>
-                                <p>匹配养老服务</p>
-                            </li>
-                            <li class="steps">
-                                <div class="icon-box">
-                                    <i class="iconfont icon-person"></i>
-                                </div>
-                                <p>辅助机构预约</p>
-                            </li>
-                        </ul>
-                        <p class="center f16 tel"><i class="iconfont icon-dianhua"></i> 请直接拨打顾问热线 400-104-5120</p>
-                        <div class="search-box">
-                            <input type="text" class="name" placeholder="请输入姓名">
-                            <input type="text" class="city" placeholder="请输入城市/养老院">
-                            <a href="javascript:void(0)">搜索</a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="ad-right fr">
-                <a href="#"><img src="./img/banner.png" alt=""></a>
-            </div>
-        </div>
-        <div class="ad-bottom">
-            <a href="#"><img src="./img/ad.png" alt=""></a>
-        </div>
+    <!-- 面包屑导航 -->
+    <div class="bread-crumb wp">
+        <ul class="clearfix">
+            <li>您当前的位置:</li>
+            <li><a href="#"> 首页 </a> > </li>
+            <li><a href="#"> 住院宝住院中心 </a></li>
+        </ul>
     </div>
 
-    <!-- 主体内容区 -->
+    <!-- 搜索区域 -->
+    <div class="search-section wp">
+        <div class="search-area">
+            <span>城市</span>
+            <select name="" id="">
+                <option value="">北京</option>
+                <option value="">北京</option>
+            </select>
+        </div>
+        <div class="search-area">
+            <span>入驻</span>
+            <select name="" id="">
+                <option value="">2018-01-01</option>
+            </select>
+        </div>
+        <div class="search-area">
+            <span>关键词</span>
+            <input type="text" placeholder="机构名/位置/品牌">
+        </div>
+        <a href="#" class="search-button">搜索</a>
+    </div>
 
-    <!-- 机构养老 -->
-    <div class="main-section wp">
-        <div class="top-nav">
-            <ul class="clearfix">
-                <li class="active"><a href="#">机构养老</a></li>
-                <li><a href="#">社区/居家养老</a></li>
+
+    <!-- 筛选区域 -->
+    <div class="filter-section wp">
+        <div class="filter-area">
+            <div class="name">选择区域：</div>
+            <ul class="clearfix filter-list">
+                <li><a href="javascript:void(0)">不限</a></li>
+                <li><a href="javascript:void(0)">朝阳区</a></li>
+                <li><a href="javascript:void(0)">海淀区</a></li>
+                <li><a href="javascript:void(0)">东城区</a></li>
+                <li><a href="javascript:void(0)">西城区</a></li>
+                <li><a href="javascript:void(0)">崇文区</a></li>
+                <li><a href="javascript:void(0)">宣武区</a></li>
+                <li><a href="javascript:void(0)">丰台区</a></li>
+                <li><a href="javascript:void(0)">通州区</a></li>
+                <li><a href="javascript:void(0)">石景山区</a></li>
+                <li><a href="javascript:void(0)">房山区</a></li>
+                <li><a href="javascript:void(0)">昌平区</a></li>
+                <li><a href="javascript:void(0)">大兴区</a></li>
+                <li><a href="javascript:void(0)">顺义区</a></li>
+                <li><a href="javascript:void(0)">密云区</a></li>
+                <li><a href="javascript:void(0)">怀柔区</a></li>
             </ul>
         </div>
-        <div class="main-box clearfix">
-            <div class="main-left fl">
-                <p class="fb">机构类型</p>
-                <ul class="clearfix">
-                    <li><a href="#">综合性养老机构</a></li>
-                    <li><a href="#">护理院</a></li>
-                    <li><a href="#">失能照护</a></li>
-                    <li><a href="#">认知症专护</a></li>
-                </ul>
-                <p class="fb">热门城市</p>
-                <ul class="clearfix">
-                    <li><a href="#">北京</a></li>
-                    <li><a href="#">上海</a></li>
-                    <li><a href="#">广东</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                </ul>
-            </div>
-            <div class="main-right fr">
-                <div class="city-tabs clearfix">
-                    <ul>
-                        <li class="active"><a href="javascript:void(0)">北京</a></li>
-                        <li><a href="javascript:void(0)">上海</a></li>
-                        <li><a href="javascript:void(0)">广州</a></li>
-                        <li><a href="javascript:void(0)">深圳</a></li>
-                        <li class="more"><a href="javascript:void(0)">查看更多></a></li>
-                    </ul>
-                </div>
-                <div class="main-list">
-                    <ul class="clearfix">
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list2.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list2.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list2.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list2.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="star fr">
-                                        ★★★★☆ <span class="grey">4</span>
-                                    </span>
-                                </p>
-                            </div>
-                        </li>
+        <div class="filter-area">
+            <div class="name">医院范围：</div>
+            <ul class="clearfix filter-list">
+                <li><a href="javascript:void(0)">不限</a></li>
+                <li><a href="javascript:void(0)">北医三院</a></li>
+                <li><a href="javascript:void(0)">安贞医院</a></li>
+                <li><a href="javascript:void(0)">中日友好医院</a></li>
+                <li><a href="javascript:void(0)">积水潭医院</a></li>
+                <li><a href="javascript:void(0)">305医院</a></li>
+                <li><a href="javascript:void(0)">北京协和医院</a></li>
+                <li><a href="javascript:void(0)">北京和睦家医院</a></li>
+                <li><a href="javascript:void(0)">首都附属医院</a></li>
+                <li><a href="javascript:void(0)">积水潭医院</a></li>
+                <li><a href="javascript:void(0)">306医院</a></li>
+                <li><a href="javascript:void(0)">北京民众眼科</a></li>
+                <li><a href="javascript:void(0)">首都医科大学附属医院</a></li>
+                <li><a href="javascript:void(0)">北医三院</a></li>
+                <li><a href="javascript:void(0)">安贞医院</a></li>
+                <li><a href="javascript:void(0)">中日友好医院</a></li>
+            </ul>
+        </div>
+        <div class="filter-area">
+            <div class="name">房间价格：</div>
+            <ul class="clearfix filter-list">
+                <li><a href="javascript:void(0)">不限</a></li>
+                <li><a href="javascript:void(0)">100-300元</a></li>
+                <li><a href="javascript:void(0)">300-500元</a></li>
+                <li><a href="javascript:void(0)">500-700元</a></li>
+                <li><a href="javascript:void(0)">700-1000元</a></li>
+                <li><a href="javascript:void(0)">1000-1500元</a></li>
+                <li><a href="javascript:void(0)">1500-5000元</a></li>
+                <li><a href="javascript:void(0)">2000元以上</a></li>
+            </ul>
+        </div>
+        <div class="filter-area">
+            <div class="name">租住类型：</div>
+            <ul class="clearfix filter-list">
+                <li><a href="javascript:void(0)">不限</a></li>
+                <li><a href="javascript:void(0)">日租</a></li>
+                <li><a href="javascript:void(0)">月租</a></li>
+            </ul>
+        </div>
+        <div class="filter-area">
+            <div class="name">房间品质：</div>
+            <ul class="clearfix filter-list">
+                <li><a href="javascript:void(0)">经济型</a></li>
+                <li><a href="javascript:void(0)">舒适型</a></li>
+                <li><a href="javascript:void(0)">豪华型</a></li>
+            </ul>
+        </div>
 
-                    </ul>
-                </div>
-            </div>
+        <hr class="splitLine">
+
+        <div class="filter-result clearfix">
+            <strong class="fl">为您找到 <span class="green">27</span> 家养老机构</strong>
+            <ul class="clearfix fl">
+                <li><a href="#">100-300元 ×</a></li>
+                <li><a href="#">陪护床位 ×</a></li>
+            </ul>
+            <a href="javascript:void(0)" class="clear green f14">清除</a>
         </div>
 
     </div>
 
 
-    <!-- 医小护 -->
-    <div class="main-section wp">
-        <div class="top-nav">
-            <ul class="clearfix">
-                <li class="active"><a href="#">医小护</a></li>
-            </ul>
-        </div>
-        <div class="main-box clearfix">
-            <div class="main-left fl">
-                <p class="fb">机构类型</p>
-                <ul class="clearfix">
-                    <li><a href="#">综合性养老机构</a></li>
-                    <li><a href="#">护理院</a></li>
-                    <li><a href="#">失能照护</a></li>
-                    <li><a href="#">认知症专护</a></li>
+
+    <!-- 预定列表 -->
+    <div class="order-list clearfix wp">
+        <div class="list-box fl">
+            <div class="list-box-nav clearfix">
+                <ul class="clearfix fl filter">
+                    <li><a href="javascript:void(0)">推荐</a></li>
+                    <li><a href="javascript:void(0)">口碑价格</a></li>
+                    <li class="price">
+                        <a href="javascript:void(0)">价格</a>
+                        <span class="up active"></span>
+                        <span class="down"></span>
+                    </li>
+                    <li><a href="javascript:void(0)">最近开业</a></li>
                 </ul>
-                <p class="fb">热门城市</p>
-                <ul class="clearfix">
-                    <li><a href="#">北京</a></li>
-                    <li><a href="#">上海</a></li>
-                    <li><a href="#">广东</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
+                <ul class="clearfix fr choose">
+                    <li><label><input type="checkbox">可试住</label></li>
+                    <li><label><input type="checkbox">促销</label></li>
+                    <li><label><input type="checkbox">立即确认</label></li>
                 </ul>
             </div>
-            <div class="main-right fr">
-                <div class="city-tabs clearfix">
-                    <ul>
-                        <li class="active"><a href="javascript:void(0)">北京</a></li>
-                        <li><a href="javascript:void(0)">上海</a></li>
-                        <li><a href="javascript:void(0)">广州</a></li>
-                        <li><a href="javascript:void(0)">深圳</a></li>
-                        <li class="more"><a href="javascript:void(0)">查看更多></a></li>
-                    </ul>
-                </div>
-                <div class="main-list">
-                    <ul class="clearfix">
-                        <li class="list-box person">
-                            <a href="#"><img src="./img/person.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box person">
-                            <a href="#"><img src="./img/person.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box person">
-                            <a href="#"><img src="./img/person.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box person">
-                            <a href="#"><img src="./img/person.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    </div>
-
-    <!-- 旅居养老 -->
-    <div class="main-section wp">
-        <div class="top-nav">
-            <ul class="clearfix">
-                <li class="active"><a href="#">旅居养老</a></li>
-            </ul>
-        </div>
-        <div class="main-box clearfix">
-            <div class="main-left fl">
-                <p class="fb">机构类型</p>
-                <ul class="clearfix">
-                    <li><a href="#">综合性养老机构</a></li>
-                    <li><a href="#">护理院</a></li>
-                    <li><a href="#">失能照护</a></li>
-                    <li><a href="#">认知症专护</a></li>
-                </ul>
-                <p class="fb">热门城市</p>
-                <ul class="clearfix">
-                    <li><a href="#">北京</a></li>
-                    <li><a href="#">上海</a></li>
-                    <li><a href="#">广东</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                    <li><a href="#">深圳</a></li>
-                </ul>
-            </div>
-            <div class="main-right fr">
-                <div class="city-tabs clearfix">
-                    <ul>
-                        <li class="active"><a href="javascript:void(0)">北京</a></li>
-                        <li><a href="javascript:void(0)">上海</a></li>
-                        <li><a href="javascript:void(0)">广州</a></li>
-                        <li><a href="javascript:void(0)">深圳</a></li>
-                        <li class="more"><a href="javascript:void(0)">查看更多></a></li>
-                    </ul>
-                </div>
-                <div class="main-list clearfix">
-                    <ul class="clearfix fl ad-main">
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="list-box">
-                            <a href="#"><img src="./img/list.png" alt=""></a>
-                            <div class="des">
-                                <h4>向阳院长者公寓</h4>
-                                <p>
-                                    <span class="f18 red">￥6000</span>
-                                    <span class="fr grey">10位老人关注</span>
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="ads fr">
-                        <a href="#"><img src="./img/ad2.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="main-section wp">
-
-        <div class="top-nav">
-            <ul class="clearfix">
-                <li class="active"><a href="#">养老资讯</a></li>
-            </ul>
-        </div>
-
-        <div class="info-box">
-
-            <div class="info-left">
-                <div class="clearfix line-60">
-                    <p class="fl f18">养老指南</p>
-                    <span class="fr grey"><a href="#">查看更多</a></span>
-                </div>
-                <div class="info-main clearfix">
-                    <img class="fl" src="./img/info.jpg" alt="">
-                    <div class="info-main-box fr">
-                        <h4 class="green textwp f18 line-40">世界杯都结束了，你还有什么理由</h4>
-                        <p class="grey line-20">如果说最近有什么值得熬夜的事情，那 一定就是世界杯了！世界杯尚未揭幕， 热情的球迷就已经兴奋得睡不着觉了； 世界杯酣战期间，兴... <a href="#">[详情]</a></p>
-                    </div>
-                </div>
-                <div class="info-list">
-                    <ul>
-                        <li><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                        <li><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                        <li><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                        <li><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                        <li><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                        <li><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-left">
-                <div class="clearfix line-60">
-                    <p class="fl f18">养老百科</p>
-                    <span class="fr grey"><a href="#">查看更多</a></span>
-                </div>
-                <div class="info-main clearfix">
-                    <img class="fl" src="./img/info.jpg" alt="">
-                    <div class="info-main-box fr">
-                        <h4 class="green textwp f18 line-40">世界杯都结束了，你还有什么理由</h4>
-                        <p class="grey line-20">如果说最近有什么值得熬夜的事情，那 一定就是世界杯了！世界杯尚未揭幕， 热情的球迷就已经兴奋得睡不着觉了； 世界杯酣战期间，兴... <a href="#">[详情]</a></p>
-                    </div>
-                </div>
-                <div class="info-list">
-                    <ul>
-                        <li class="line-30"><a href="#" class="textwp">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a><span class="fr grey">2018-03-21</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="info-right">
-                <div class="clearfix line-60">
-                    <p class="fl f18">热门文章</p>
-                    <span class="fr grey category"><a class="active" href="#">每周</a> | <a href="#">每月</a></span>
-                </div>
+            <div class="order-listing">
                 <ul>
-                    <li class="hot-article-list textwp">
-                        <span class="green">1</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
+                    <li class="clearfix">
+                        <img src="./img/list-detail.jpg" alt="" class="fl">
+                        <div class="order-listing-box fl">
+                            <p class="f18 line-50 center">北医三院住院中心-标准床位</p>
+                            <p class="line-25 textwp">210张床位 | 民办 | 老年公寓 | 开业时间：2017年8月1日</p>
+                            <p class="line-25">
+                                <span class="address">地址：北京市丰台区大红门锦苑小区C区5号楼地址：北京市丰台区大红门锦苑小区C区5号楼</span>
+                                <a href="#" class="green fr">查看地图</a>
+                            </p>
+                            <ul class="clearfix label">
+                                <li class="active">自营</li>
+                                <li>护理</li>
+                                <li>包餐</li>
+                                <li>挂号</li>
+                                <li>陪诊</li>
+                                <li>券</li>
+                            </ul>
+                            <ul class="clearfix tips">
+                                <li>15天试住体验</li>
+                                <li>国企下设第四家分支机构</li>
+                                <li>二环内交通便捷</li>
+                            </ul>
+                        </div>
+                        <div class="price-box fr">
+                            <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
+                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20">来自<span class="green">290</span>条评价</p>
+                            <div class="line-40">
+                                </p><a href="#" class="detail-button">查看详情</a></div>
+                            <p class="orange">1天前有人预定</p>
+                        </div>
                     </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">2</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
+
+                    <li class="clearfix">
+                        <img src="./img/list-detail.jpg" alt="" class="fl">
+                        <div class="order-listing-box fl">
+                            <p class="f18 line-50 center">北医三院住院中心-标准床位</p>
+                            <p class="line-25 textwp">210张床位 | 民办 | 老年公寓 | 开业时间：2017年8月1日</p>
+                            <p class="line-25">
+                                <span class="address">地址：北京市丰台区大红门锦苑小区C区5号楼地址：北京市丰台区大红门锦苑小区C区5号楼</span>
+                                <a href="#" class="green fr">查看地图</a>
+                            </p>
+                            <ul class="clearfix label">
+                                <li class="active">自营</li>
+                                <li>护理</li>
+                                <li>包餐</li>
+                                <li>挂号</li>
+                                <li>陪诊</li>
+                                <li>券</li>
+                            </ul>
+                            <ul class="clearfix tips">
+                                <li>15天试住体验</li>
+                                <li>国企下设第四家分支机构</li>
+                                <li>二环内交通便捷</li>
+                            </ul>
+                        </div>
+                        <div class="price-box fr">
+                            <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
+                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20">来自<span class="green">290</span>条评价</p>
+                            <div class="line-40">
+                                </p><a href="#" class="detail-button">查看详情</a></div>
+                            <p class="orange">1天前有人预定</p>
+                        </div>
                     </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">3</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">4</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">5</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">6</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">7</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">8</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">9</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
-                    </li>
-                    <li class="hot-article-list textwp">
-                        <span class="green">10</span>
-                        <a href="#">看病太麻烦？就医答疑一条龙服务了解看病太麻烦？就医答疑一条龙服务了解</a>
+
+                    <li class="clearfix">
+                        <img src="./img/list-detail.jpg" alt="" class="fl">
+                        <div class="order-listing-box fl">
+                            <p class="f18 line-50 center">北医三院住院中心-标准床位</p>
+                            <p class="line-25 textwp">210张床位 | 民办 | 老年公寓 | 开业时间：2017年8月1日</p>
+                            <p class="line-25">
+                                <span class="address">地址：北京市丰台区大红门锦苑小区C区5号楼地址：北京市丰台区大红门锦苑小区C区5号楼</span>
+                                <a href="#" class="green fr">查看地图</a>
+                            </p>
+                            <ul class="clearfix label">
+                                <li class="active">自营</li>
+                                <li>护理</li>
+                                <li>包餐</li>
+                                <li>挂号</li>
+                                <li>陪诊</li>
+                                <li>券</li>
+                            </ul>
+                            <ul class="clearfix tips">
+                                <li>15天试住体验</li>
+                                <li>国企下设第四家分支机构</li>
+                                <li>二环内交通便捷</li>
+                            </ul>
+                        </div>
+                        <div class="price-box fr">
+                            <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
+                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20">来自<span class="green">290</span>条评价</p>
+                            <div class="line-40">
+                                </p><a href="#" class="detail-button">查看详情</a></div>
+                            <p class="orange">1天前有人预定</p>
+                        </div>
                     </li>
                 </ul>
             </div>
 
         </div>
-
+        <div class="recommend-box fr"></div>
     </div>
 
-    <!-- 品牌推荐 -->
-    <div class="main-section wp">
 
-        <div class="top-nav">
-            <ul class="clearfix">
-                <li class="active"><a href="#">品牌推荐</a></li>
-            </ul>
-        </div>
-
-        <div class="brand-box">
-            <ul class="clearfix">
-                <li>
-                    <img src="./img/co1.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co2.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co3.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co4.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co5.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co6.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co7.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co8.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co9.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co1.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co2.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co3.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co4.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co5.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co6.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co7.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co8.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-                <li>
-                    <img src="./img/co9.png" alt="">
-                    <p class="center">Club Med</p>
-                </li>
-            </ul>
-        </div>
-
-    </div>
 
 
     <!-- 网站导航 -->
@@ -858,7 +439,7 @@
         <div class="wp">
             <div class="slogan">
                 <ul class="clearfix">
-                    <li class="t-left">
+                    <li class="center">
                         <h2>放心</h2>
                         <p class="des">大平台保障</p>
                     </li>
@@ -867,10 +448,10 @@
                         <p class="des">只做养老</p>
                     </li>
                     <li class="center">
-                        <h2>1V1</h2>
+                        <h2>1v1</h2>
                         <p class="des">养老定制服务</p>
                     </li>
-                    <li class="t-right">
+                    <li class="center">
                         <h2>7x24</h2>
                         <p class="des">小时服务</p>
                     </li>
@@ -920,6 +501,19 @@
     </footer>
 
     <script src="./js/jquery-1.9.1.js "></script>
+
+    <script>
+        $(function () {
+            // 价格排序
+            $('.order-list .price span').on('click', function () {
+                if ($(this).hasClass('active')) {
+                    $(this).removeClass('active')
+                } else {
+                    $(this).addClass('active').siblings('span').removeClass('active');
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>

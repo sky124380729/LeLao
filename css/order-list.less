@@ -1,0 +1,228 @@
+@charset 'utf-8';
+@import "./common";
+@import "./public";
+
+
+body {
+    color: #666;
+}
+/* 面包屑导航 */
+.bread-crumb {
+    line-height: 88px;
+    li {
+        .fl;
+    }
+}
+
+/* 搜索区域 */
+.search-section {
+    height: 78px;
+    line-height: 78px; 
+    margin-bottom: 12px;
+    padding: 0 28px;
+    background-color: #fbfbfb;   
+    border: 1px solid @border;
+    .search-area {
+        .fl;
+        .f16;
+        span {
+            margin:0 6px;
+        }
+        select,input {
+            width: 252px;
+            height: 46px;
+            margin: 0 10px;
+            padding:0 10px; 
+            border: 1px solid @border;
+            .brs;
+        }
+    }
+    .search-button {
+        display: inline-block;
+        .fr;
+        width: 130px;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 21px;
+        background-color: @green;
+        color: #fff;
+        .brs(6px);
+        .center;
+        .f18;
+    }
+}
+
+/* 筛选区域 */
+.filter-section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid @border;
+    line-height: 54px;
+    .filter-area {
+        .name {
+            .fl;
+            .center;
+            width: 110px;
+        }
+    }
+    .filter-list {
+        margin-left: 110px;
+        li {
+            .fl;
+            margin-right: 15px;
+        }
+    }
+    .splitLine {
+        width: 90%;
+        margin: 10px auto 0;
+        border: none;
+        border-top: 1px solid @border;
+    }
+    .filter-result {
+        padding: 0 20px;
+        .f16;
+        strong {
+            margin-right: 10px;
+        }
+        li{
+            .fl;
+            .f14;
+            height: 30px;
+            line-height: 30px;
+            border: 1px solid @green;
+            background-color: #d5faca;
+            margin: 10px;
+            padding: 0 4px;
+            color: @green;
+        }
+    }
+}
+
+
+
+/* 预定列表主区 */
+.order-list {
+    .list-box {
+        width: 806px;
+        .list-box-nav {
+            line-height: 42px;
+            border:1px solid @border;
+            background-color: #fff;
+            padding-right: 15px;
+            margin-bottom:15px;
+            .filter {
+                li {
+                    .fl;
+                    .center;
+                    width: 80px;
+                    border-right: 1px solid @border;
+                }
+                .price {
+                    position: relative;
+                    .down {
+                        position: absolute;
+                        top: 23px;
+                        right: 10px;
+                        width: 0;
+                        height: 0;
+                        border-width: 6px;
+                        border-style: solid;
+                        border-color:#898a8a transparent transparent transparent;
+                        cursor: pointer;
+                        &.active {
+                            border-top-color:@green; 
+                        }
+                    }
+                    .up {
+                        position: absolute;
+                        bottom: 23px;
+                        right: 10px;
+                        width: 0;
+                        height: 0;
+                        border-width: 6px;
+                        border-style: solid;
+                        border-color: transparent transparent #898a8a transparent;
+                        cursor: pointer;
+                        &.active {
+                            border-bottom-color:@green; 
+                        }
+                    }
+                }
+            }
+            .choose {
+                li {
+                    .fl;
+                    label {
+                        cursor: pointer;
+                    }
+                    input {
+                        margin:0 5px;
+                    }
+                }
+            }
+        }
+        .order-listing {
+            &>ul>li {
+                height: 173px;
+                margin-bottom: 20px;
+                background-color: #fff;
+                border:1px solid @border;
+                img {
+                    width: 260px;
+                    height: 171px;
+                    margin-right: 22px;
+                }
+            }
+        }
+        .order-listing-box {
+            width: 348px;
+            .address {
+                display: inline-block;
+                width: 283px;
+                .textwp;
+            }
+            .label li {
+                .fl;
+                border:1px solid @orange;
+                .brs(2px);
+                margin-right: 4px;
+                color: @orange;
+                padding: 4px 6px;
+                &.active {
+                    background-color: @orange;
+                    color: #fff;
+                }
+            }
+            .tips {
+                width: 348px;
+                li {
+                    .fl;
+                    color: @green;
+                    line-height: 30px;
+                    margin-right: 4px;
+                    font-size: 12px;
+                }
+            }
+        }
+        .price-box {
+            width: 172px;
+            .center;
+            .price {
+                line-height: 48px;
+                &>span {
+                    font-size: 32px;
+                }
+            }
+            .detail-button {
+                .f16;
+                padding: 6px 12px;
+                background-color: @orange;
+                color: #fff;
+                .brs(2px);
+            }
+        }
+    }
+    .recommend-box {
+        width: 376px;
+    }
+}
