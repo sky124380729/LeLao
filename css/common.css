@@ -9,6 +9,9 @@
 .f18 {
   font-size: 18px;
 }
+.f24 {
+  font-size: 24px;
+}
 .fb {
   font-weight: bold;
 }
@@ -16,7 +19,7 @@
   color: #ff001e;
 }
 .green {
-  color: pink;
+  color: #2bb404;
 }
 .grey {
   color: #9c9c9c;
@@ -97,7 +100,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: pink;
+  color: #2bb404;
 }
 input[type="checkbox"] {
   position: relative;
@@ -115,5 +118,5 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   left: 2px;
   top: -2px;
-  color: pink;
+  color: #2bb404;
 }
