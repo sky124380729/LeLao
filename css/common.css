@@ -39,7 +39,7 @@
   color: #ff001e;
 }
 .green {
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 .grey {
   color: #9c9c9c;
@@ -120,7 +120,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 label {
   cursor: pointer;
@@ -141,5 +141,5 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   left: 2px;
   top: -2px;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }

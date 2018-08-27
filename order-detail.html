@@ -121,6 +121,7 @@
 
                     <div class="fl img-big">
                         <img src="./img/list.png" alt="" width="542" height="303">
+                        <span class="total">12张图片</span>
                     </div>
 
                     <div class="fr img-listing">
@@ -163,8 +164,72 @@
             </div>
         </div>
 
+
         <div class="clearfix">
-            <div class="list-box fl"></div>
+
+
+
+
+
+            <!-- 主要内容区 -->
+            <div class="list-box fl">
+                <!-- 预定列表 -->
+                <div class="list-area">
+                    <div class="list-area-nav clearfix">
+                        <ul>
+                            <li class="active">房型价格</li>
+                            <li>机构介绍</li>
+                            <li>位置及周边</li>
+                            <li>点评 (205)</li>
+                        </ul>
+                    </div>
+                    <p class="grey chooseDate">
+                        <span>您的入住时间：</span>
+                        <input type="text" onclick="getDate(this)">
+                        <a href="##">确定</a>
+                    </p>
+                    <div class="listing">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width="152">房型</th>
+                                    <th width="100">床位费</th>
+                                    <th width="100">护理费</th>
+                                    <th width="100">伙食费</th>
+                                    <th width="100">取消政策</th>
+                                    <th>月均价</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img class="fl info-img" src="./img/list.png" alt="">
+                                        <div class="fl info-content">
+                                            <p class="line-30">标准床位</p>
+                                            <p><a href="##">查看详情</a></p>
+                                        </div>
+                                    </td>
+                                    <td><span class="orange">￥</span>1000</td>
+                                    <td><span class="orange">￥</span>1000</td>
+                                    <td><span class="orange">￥</span>1000</td>
+                                    <td>限时取消</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
             <div class="recommend-box fr">
                 <div class="recommend-top">
                     <div class="p20">
@@ -442,6 +507,7 @@
 
     <script>
         $(function () {
+            //费用明细
             $('.chargeDescription').on('mouseover', function () {
                 layer.tips(
                     `
@@ -454,6 +520,11 @@
                         tips: [2, '#fefee6'],
                         time: 2000
                     });
+            })
+
+            //列表tab切换
+            $('.list-area-nav li').on('click', function () {
+                $(this).addClass('active').siblings().removeClass('active');
             })
         })
     </script>

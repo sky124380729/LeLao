@@ -17,6 +17,7 @@
 
     // 头部
     .detail-top {
+        margin-bottom: 20px;
         .function {
             li {
                 .fl;
@@ -47,14 +48,28 @@
         margin-bottom: 30px;
         .img-list {
             .img-big {
+                position: relative;
                 height: 542px;
                 height: 303px;
-                margin-right: 20px;
+                margin-right: 16px;
+                .total {
+                    position: absolute;
+                    top: 18px;
+                    right: 18px;
+                    padding: 6px 8px;
+                    background-color: rgba(0,0,0,.4);
+                    color: #fff;
+                    .brs(2px);
+                }
             }
             .img-listing {
                 width: 248px;
                 li {
                     .fl;
+                    &:nth-child(2n+1) {
+                        margin-right: 6px;
+                    }
+                    margin-bottom: 6px;
                     img {
                         width: 119px;
                         height: 97px;
@@ -88,7 +103,7 @@
                 a {
                     display: block;
                     .fl;
-                    padding: 6px 13px;
+                    padding: 8px 13px;
                     background-color: @green;
                     color: #fff;
                     margin-right: 10px;
@@ -105,6 +120,66 @@
     //列表
     .list-box {
         width: 806px;
+        // 预定列表
+        .list-area-nav {
+            border-bottom: 1px solid #c8c8c8;
+            li {
+                .fl;
+                padding: 0 10px;
+                line-height: 70px;
+                font-size: 20px;
+                .center;
+                margin-right: 20px;
+                cursor: pointer;
+                &.active {
+                    color: @green;
+                    border-bottom: 2px solid @green;
+                }
+            }
+        }
+        .chooseDate {
+            line-height: 60px;
+            input {
+                width: 158px;
+                height: 32px;
+                border:1px solid @border;
+                padding-left: 15px;
+                background-color: #f6f6f6;
+                margin-right: 10px;
+            }
+            a {
+                background-color:@orange;
+                color: #fff;
+                padding: 6px 12px;
+                .brs;
+            }
+        }
+        .listing {
+            table {
+                width: 100%;
+                thead {
+                    background-color: #fcfcfc;
+                    border-bottom: 1px solid @border;
+                    th {
+                        line-height: 40px;
+                    }
+                }
+                tbody {
+                    background-color: #fff;
+                    td {
+                        padding: 12px;
+                        .center;
+                    }
+                    .info-img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    .info-content {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
     }
     .recommend-box {
         width: 376px;
