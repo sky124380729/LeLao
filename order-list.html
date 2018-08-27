@@ -86,9 +86,7 @@
         </div>
         <div class="search-area">
             <span>入驻</span>
-            <select name="" id="">
-                <option value="">2018-01-01</option>
-            </select>
+            <input type="text" onfocus="getDate(this)">
         </div>
         <div class="search-area">
             <span>关键词</span>
@@ -731,9 +729,11 @@
     </footer>
 
 
-
     <script src="./js/jquery-1.9.1.js "></script>
-    
+    <script src="./js/layer/layer.js"></script>
+    <script src="./js/laydate/laydate.js"></script>
+    <script src="./js/common.js"></script>
+
     <script>
         $(function () {
             // 筛选部分
@@ -748,13 +748,6 @@
                 } else {
                     $(this).addClass('active').siblings('span').removeClass('active');
                 }
-            })
-            //登录
-            $('.search-bar .login').on('click', function () {
-                layer.open({
-                    type: 1,
-                    content: $('#login')
-                });
             })
         })
     </script>
