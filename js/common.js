@@ -41,3 +41,10 @@ function getDate(obj) {
         show: true
     });
 }
+
+
+$(function () {
+    $.get("../common.html", function (result) {
+        $("#modelArea").html(result);
+    });
+})

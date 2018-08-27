@@ -8,7 +8,7 @@
     <title>首页</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/order-list.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_801047_pbkwvh07tn.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_801047_0nw3h3rhijk.css">
 </head>
 
 <body>
@@ -41,9 +41,9 @@
             <div class="login-box fr">
                 <i class="iconfont icon-dianhua"></i>
                 <span>400-104-5120</span>
-                <a href="#" class="login">登录</a>
+                <a href="#" class="login-box-btn login" onclick="openModel('login')">登录</a>
                 <span>或</span>
-                <a href="#" class="register">注册</a>
+                <a href="#" class="login-box-btn" onclick="openModel('register')">注册</a>
             </div>
         </div>
     </div>
@@ -233,7 +233,7 @@
                         </div>
                         <div class="price-box fr">
                             <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20 grade">4.0/5分</p>
                             <p class="line-20">来自<span class="green">290</span>条评价</p>
                             <div class="line-40">
                                 </p><a href="#" class="detail-button">查看详情</a></div>
@@ -266,7 +266,7 @@
                         </div>
                         <div class="price-box fr">
                             <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20 grade">4.0/5分</p>
                             <p class="line-20">来自<span class="green">290</span>条评价</p>
                             <div class="line-40">
                                 </p><a href="#" class="detail-button">查看详情</a></div>
@@ -299,7 +299,7 @@
                         </div>
                         <div class="price-box fr">
                             <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20 grade">4.0/5分</p>
                             <p class="line-20">来自<span class="green">290</span>条评价</p>
                             <div class="line-40">
                                 </p><a href="#" class="detail-button">查看详情</a></div>
@@ -332,41 +332,7 @@
                         </div>
                         <div class="price-box fr">
                             <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
-                            <p class="line-20">来自<span class="green">290</span>条评价</p>
-                            <div class="line-40">
-                                </p><a href="#" class="detail-button">查看详情</a></div>
-                            <p class="orange">1天前有人预定</p>
-                        </div>
-                    </li>
-
-
-                    <li class="clearfix">
-                        <img src="./img/list-detail.jpg" alt="" class="fl">
-                        <div class="order-listing-box fl">
-                            <p class="f18 line-50 title"><i class="water">1</i>北医三院住院中心-标准床位</p>
-                            <p class="line-25 textwp">210张床位 | 民办 | 老年公寓 | 开业时间：2017年8月1日</p>
-                            <p class="line-25">
-                                <span class="address">地址：北京市丰台区大红门锦苑小区C区5号楼地址：北京市丰台区大红门锦苑小区C区5号楼</span>
-                                <a href="#" class="green fr">查看地图</a>
-                            </p>
-                            <ul class="clearfix label">
-                                <li class="active">自营</li>
-                                <li>护理</li>
-                                <li>包餐</li>
-                                <li>挂号</li>
-                                <li>陪诊</li>
-                                <li>券</li>
-                            </ul>
-                            <ul class="clearfix tips">
-                                <li>15天试住体验</li>
-                                <li>国企下设第四家分支机构</li>
-                                <li>二环内交通便捷</li>
-                            </ul>
-                        </div>
-                        <div class="price-box fr">
-                            <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20 grade">4.0/5分</p>
                             <p class="line-20">来自<span class="green">290</span>条评价</p>
                             <div class="line-40">
                                 </p><a href="#" class="detail-button">查看详情</a></div>
@@ -400,7 +366,7 @@
                         </div>
                         <div class="price-box fr">
                             <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20 grade">4.0/5分</p>
                             <p class="line-20">来自<span class="green">290</span>条评价</p>
                             <div class="line-40">
                                 </p><a href="#" class="detail-button">查看详情</a></div>
@@ -434,7 +400,41 @@
                         </div>
                         <div class="price-box fr">
                             <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
-                            <p class="line-20">4.0/5分</p>
+                            <p class="line-20 grade">4.0/5分</p>
+                            <p class="line-20">来自<span class="green">290</span>条评价</p>
+                            <div class="line-40">
+                                </p><a href="#" class="detail-button">查看详情</a></div>
+                            <p class="orange">1天前有人预定</p>
+                        </div>
+                    </li>
+
+
+                    <li class="clearfix">
+                        <img src="./img/list-detail.jpg" alt="" class="fl">
+                        <div class="order-listing-box fl">
+                            <p class="f18 line-50 title"><i class="water">1</i>北医三院住院中心-标准床位</p>
+                            <p class="line-25 textwp">210张床位 | 民办 | 老年公寓 | 开业时间：2017年8月1日</p>
+                            <p class="line-25">
+                                <span class="address">地址：北京市丰台区大红门锦苑小区C区5号楼地址：北京市丰台区大红门锦苑小区C区5号楼</span>
+                                <a href="#" class="green fr">查看地图</a>
+                            </p>
+                            <ul class="clearfix label">
+                                <li class="active">自营</li>
+                                <li>护理</li>
+                                <li>包餐</li>
+                                <li>挂号</li>
+                                <li>陪诊</li>
+                                <li>券</li>
+                            </ul>
+                            <ul class="clearfix tips">
+                                <li>15天试住体验</li>
+                                <li>国企下设第四家分支机构</li>
+                                <li>二环内交通便捷</li>
+                            </ul>
+                        </div>
+                        <div class="price-box fr">
+                            <p class="orange price">￥ <span class="f18 fb">198</span> 起</p>
+                            <p class="line-20 grade">4.0/5分</p>
                             <p class="line-20">来自<span class="green">290</span>条评价</p>
                             <div class="line-40">
                                 </p><a href="#" class="detail-button">查看详情</a></div>
@@ -728,6 +728,7 @@
 
     </footer>
 
+    <div id="modelArea"></div>
 
     <script src="./js/jquery-1.9.1.js "></script>
     <script src="./js/layer/layer.js"></script>
@@ -748,6 +749,22 @@
                 } else {
                     $(this).addClass('active').siblings('span').removeClass('active');
                 }
+            })
+
+            //评分
+            $('.price-box .grade').on('mouseover', function () {
+                layer.tips(
+                    `
+                    <div style="color:#000">
+                        <p>位置评分：4.6     护理评分：4.6</p>
+                        <p>设施环境：4.6     服务评分：4.6</p>    
+                    <div>
+                    `,
+                    this,
+                    {
+                        tips: [3, '#fefee6'],
+                        time: 2000
+                    });
             })
         })
     </script>
