@@ -1,11 +1,25 @@
 /* 定义项目的公共颜色 */
 @green: #2bb404;    //主体绿
-// @green:pink;
+@green:rgba(98, 0, 255, 0.233);
 @grey: #9c9c9c;     //文字灰
 @gray: #ebebeb;     //文字浅灰
 @red: #ff001e;      //文字红
 @border: #ededed;   //边框色
 @orange:#ff9d12;    //主体橙
+
+/* placeholder */
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:@grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: @grey;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: @grey;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: @grey;
+}
 
 /* 定义字体大小 */
 .f14 {
@@ -145,6 +159,10 @@ a {
 	&:hover {
 		color:@green;
 	}
+}
+
+label {
+	cursor: pointer;
 }
 
 input[type="checkbox"] {

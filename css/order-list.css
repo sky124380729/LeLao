@@ -1,5 +1,22 @@
 @charset 'utf-8';
 /* 定义项目的公共颜色 */
+/* placeholder */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #9c9c9c;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9c9c9c;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9c9c9c;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9c9c9c;
+}
 /* 定义字体大小 */
 .f14 {
   font-size: 14px;
@@ -20,7 +37,7 @@
   color: #ff001e;
 }
 .green {
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
 .grey {
   color: #9c9c9c;
@@ -101,7 +118,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
+}
+label {
+  cursor: pointer;
 }
 input[type="checkbox"] {
   position: relative;
@@ -119,7 +139,7 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   left: 2px;
   top: -2px;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
 /* 公共头部 */
 .top-bar {
@@ -155,14 +175,14 @@ input[type="checkbox"]:checked::after {
   font-size: 16px;
   width: 346px;
   height: 100%;
-  border: 2px solid #2bb404;
+  border: 2px solid rgba(98, 0, 255, 0.233);
   padding: 15px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
 .search-bar .search-box a {
   display: block;
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
   color: #fff;
   font-size: 23px;
   padding: 0 20px;
@@ -176,23 +196,23 @@ input[type="checkbox"]:checked::after {
   margin: 0 4px;
 }
 .search-bar .login-box .iconfont {
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
   font-size: 24px;
   position: relative;
   top: 2px;
 }
 .search-bar .login-box .login {
-  border: 1px solid #2bb404;
+  border: 1px solid rgba(98, 0, 255, 0.233);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
   padding: 2px 16px;
   margin: 0 4px;
 }
 .nav-bar {
   line-height: 46px;
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
 }
 .nav-bar li {
   float: left;
@@ -205,7 +225,7 @@ input[type="checkbox"]:checked::after {
 /* 部分内容 */
 .main-section .top-nav {
   padding: 0 6px;
-  border-bottom: 2px solid #2bb404;
+  border-bottom: 2px solid rgba(98, 0, 255, 0.233);
 }
 .main-section .top-nav li {
   position: relative;
@@ -215,7 +235,7 @@ input[type="checkbox"]:checked::after {
   margin-right: 30px;
 }
 .main-section .top-nav li.active {
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
 .main-section .top-nav li.active::after {
   content: '▲';
@@ -266,7 +286,7 @@ footer .slogan li {
 }
 footer .slogan li h2 {
   font-size: 60px;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
   font-weight: 100;
 }
 footer .slogan li .des {
@@ -294,9 +314,177 @@ footer .about .contract dt {
   font-size: 22px;
 }
 footer .about .contract .contract-button {
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
   color: #fff;
   padding: 4px 8px;
+}
+/* 登录注册等 */
+#login,
+#register,
+#getPassword,
+#getPasswordSuccess {
+  width: 479px;
+  margin: 50px auto;
+  padding: 0 35px;
+  background-color: #fff;
+}
+#login .top span,
+#register .top span,
+#getPassword .top span,
+#getPasswordSuccess .top span {
+  line-height: 66px;
+  font-size: 23px;
+  color: #666;
+}
+#login form,
+#register form,
+#getPassword form,
+#getPasswordSuccess form {
+  color: #9c9c9c;
+}
+#login form input[type="text"],
+#register form input[type="text"],
+#getPassword form input[type="text"],
+#getPasswordSuccess form input[type="text"] {
+  width: 100%;
+  height: 60px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border: 1px solid #ededed;
+  margin: 10px auto;
+  padding-left: 20px;
+}
+#login form .login-btn,
+#register form .login-btn,
+#getPassword form .login-btn,
+#getPasswordSuccess form .login-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: rgba(98, 0, 255, 0.233);
+  color: #fff;
+  font-size: 22px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin: 20px 0;
+}
+#login form .code input[type="text"],
+#register form .code input[type="text"],
+#getPassword form .code input[type="text"],
+#getPasswordSuccess form .code input[type="text"] {
+  width: 42%;
+}
+#login form .code input[type="button"],
+#register form .code input[type="button"],
+#getPassword form .code input[type="button"],
+#getPasswordSuccess form .code input[type="button"] {
+  display: block;
+  width: 52%;
+  height: 60px;
+  margin: 10px auto;
+  border: 1px solid rgba(98, 0, 255, 0.233);
+  background: none;
+  color: rgba(98, 0, 255, 0.233);
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+#login form .icon-ok,
+#register form .icon-ok,
+#getPassword form .icon-ok,
+#getPasswordSuccess form .icon-ok {
+  font-size: 48px;
+  line-height: 80px;
+  color: rgba(98, 0, 255, 0.233);
+}
+#login .login-by-phone,
+#register .login-by-phone,
+#getPassword .login-by-phone,
+#getPasswordSuccess .login-by-phone {
+  position: relative;
+}
+#login .login-by-phone input[type="button"],
+#register .login-by-phone input[type="button"],
+#getPassword .login-by-phone input[type="button"],
+#getPasswordSuccess .login-by-phone input[type="button"] {
+  position: absolute;
+  top: 32px;
+  right: 18px;
+  border: none;
+  background: none;
+  color: rgba(98, 0, 255, 0.233);
+  cursor: pointer;
+}
+#login .other-way,
+#register .other-way,
+#getPassword .other-way,
+#getPasswordSuccess .other-way {
+  margin: 30px 0;
+}
+#login .other-way a,
+#register .other-way a,
+#getPassword .other-way a,
+#getPasswordSuccess .other-way a {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  margin: 0 5px;
+  text-align: center;
+  border: 1px solid rgba(98, 0, 255, 0.233);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+#login .other-way a i,
+#register .other-way a i,
+#getPassword .other-way a i,
+#getPasswordSuccess .other-way a i {
+  font-size: 32px;
+  color: rgba(98, 0, 255, 0.233);
+}
+#login .other-way a:hover,
+#register .other-way a:hover,
+#getPassword .other-way a:hover,
+#getPasswordSuccess .other-way a:hover {
+  border-color: #fff;
+  background-color: rgba(98, 0, 255, 0.233);
+}
+#login .other-way a:hover i,
+#register .other-way a:hover i,
+#getPassword .other-way a:hover i,
+#getPasswordSuccess .other-way a:hover i {
+  color: #fff;
+}
+#login .other-way a.wechat,
+#register .other-way a.wechat,
+#getPassword .other-way a.wechat,
+#getPasswordSuccess .other-way a.wechat {
+  border-color: #00a0e9;
+}
+#login .other-way a.wechat i,
+#register .other-way a.wechat i,
+#getPassword .other-way a.wechat i,
+#getPasswordSuccess .other-way a.wechat i {
+  color: #00a0e9;
+}
+#login .other-way a.wechat:hover,
+#register .other-way a.wechat:hover,
+#getPassword .other-way a.wechat:hover,
+#getPasswordSuccess .other-way a.wechat:hover {
+  border-color: #fff;
+  background-color: #00a0e9;
+}
+#login .other-way a.wechat:hover i,
+#register .other-way a.wechat:hover i,
+#getPassword .other-way a.wechat:hover i,
+#getPasswordSuccess .other-way a.wechat:hover i {
+  color: #fff;
 }
 body {
   color: #666;
@@ -342,7 +530,7 @@ body {
   height: 40px;
   line-height: 40px;
   margin-top: 21px;
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
   color: #fff;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -373,7 +561,7 @@ body {
   padding: 0 4px;
 }
 .filter-section .filter-list li a.active {
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
   color: #fff;
 }
 .filter-section .splitLine {
@@ -394,11 +582,11 @@ body {
   font-size: 14px;
   height: 30px;
   line-height: 30px;
-  border: 1px solid #2bb404;
+  border: 1px solid rgba(98, 0, 255, 0.233);
   background-color: #d5faca;
   margin: 10px;
   padding: 0 4px;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
 /* 预定列表主区 */
 .order-list .list-box {
@@ -432,7 +620,7 @@ body {
   cursor: pointer;
 }
 .order-list .list-box .list-box-nav .filter .price .down.active {
-  border-top-color: #2bb404;
+  border-top-color: rgba(98, 0, 255, 0.233);
 }
 .order-list .list-box .list-box-nav .filter .price .up {
   position: absolute;
@@ -446,7 +634,7 @@ body {
   cursor: pointer;
 }
 .order-list .list-box .list-box-nav .filter .price .up.active {
-  border-bottom-color: #2bb404;
+  border-bottom-color: rgba(98, 0, 255, 0.233);
 }
 .order-list .list-box .list-box-nav .choose li {
   float: left;
@@ -517,6 +705,19 @@ body {
 .order-list .list-box .order-listing-box {
   width: 348px;
 }
+.order-list .list-box .order-listing-box .water {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  width: 17px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 12px;
+  text-align: center;
+  margin-right: 6px;
+  color: #fff;
+  background-image: url('../img/water.gif');
+}
 .order-list .list-box .order-listing-box .address {
   display: inline-block;
   width: 283px;
@@ -543,7 +744,7 @@ body {
 }
 .order-list .list-box .order-listing-box .tips li {
   float: left;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
   line-height: 30px;
   margin-right: 4px;
   font-size: 12px;
@@ -615,7 +816,7 @@ body {
   height: 65px;
   line-height: 65px;
   text-align: center;
-  border: 1px solid #2bb404;
+  border: 1px solid rgba(98, 0, 255, 0.233);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -626,7 +827,7 @@ body {
   line-height: 20px;
 }
 .order-list .recommend-box .recommend-top .font .tel:hover {
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
 }
 .order-list .recommend-box .recommend-top .font .tel:hover .icon-tel {
   color: #fff;
@@ -642,7 +843,7 @@ body {
 }
 .order-list .recommend-box .recommend-top .font .icon-tel {
   font-size: 32px;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
 .order-list .recommend-box .recommend-top .font .icon-consult {
   font-size: 32px;
@@ -651,7 +852,7 @@ body {
 .order-list .recommend-box .recommend-top .bottom-tel {
   height: 80px;
   padding: 20px 0;
-  background-color: #2bb404;
+  background-color: rgba(98, 0, 255, 0.233);
   text-align: center;
   color: #fff;
 }

@@ -189,3 +189,114 @@ footer {
         }
     }
 }
+
+
+
+
+/* 登录注册等 */
+#login,#register,#getPassword,#getPasswordSuccess {
+    width: 479px;
+    margin:50px auto;
+    padding:0 35px;
+    background-color: #fff;
+    .top {
+        span {
+            line-height: 66px;
+            font-size: 23px;
+            color: #666;
+        }
+    }
+    form {
+        color: @grey;
+        input[type="text"] {
+            width: 100%;
+            height: 60px;
+            .brs;
+            border:1px solid @border;
+            margin: 10px auto;
+            padding-left: 20px;
+        }
+        .login-btn {
+            display: block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            .center;
+            background-color: @green;
+            color: #fff;
+            font-size: 22px;
+            .brs;
+            margin: 20px 0;
+        }
+        .code {
+            input[type="text"] {
+                width: 42%;
+            }
+            input[type="button"] {
+                display: block;
+                width: 52%;
+                height: 60px;
+                margin: 10px auto;
+                border: 1px solid @green;
+                background:none;
+                color: @green;
+                cursor: pointer;
+                .brs;
+            }
+        }
+        .icon-ok {
+            font-size: 48px;
+            line-height: 80px;
+            color: @green;
+        }
+    }
+    .login-by-phone {
+        position: relative;
+        input[type="button"] {
+            position: absolute;
+            top: 32px;
+            right: 18px;
+            border: none;
+            background:none;
+            color: @green;
+            cursor: pointer;
+        }
+    }
+    .other-way {
+        margin: 30px 0;
+        a {
+            display: inline-block;
+            width: 55px;
+            height: 55px;
+            line-height: 55px;
+            margin: 0 5px;
+            .center;
+            border:1px solid @green;
+            i {
+                font-size: 32px;
+                color: @green;
+            }
+            .brs(50%);
+            &:hover {
+                border-color: #fff;
+                background-color: @green;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        a.wechat {
+            border-color: #00a0e9;
+            i {
+                color: #00a0e9;
+            }
+            &:hover {
+                border-color: #fff;
+                background-color: #00a0e9;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

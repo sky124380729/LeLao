@@ -1,4 +1,21 @@
 /* 定义项目的公共颜色 */
+/* placeholder */
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #9c9c9c;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #9c9c9c;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #9c9c9c;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9c9c9c;
+}
 /* 定义字体大小 */
 .f14 {
   font-size: 14px;
@@ -19,7 +36,7 @@
   color: #ff001e;
 }
 .green {
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
 .grey {
   color: #9c9c9c;
@@ -100,7 +117,10 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
+}
+label {
+  cursor: pointer;
 }
 input[type="checkbox"] {
   position: relative;
@@ -118,5 +138,5 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   left: 2px;
   top: -2px;
-  color: #2bb404;
+  color: rgba(98, 0, 255, 0.233);
 }
