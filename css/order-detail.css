@@ -652,6 +652,205 @@ footer .about .contract .contract-button {
 .order-list .list-box .listing table tbody .info-content {
   margin-left: 10px;
 }
+.order-list .list-box .ins-introduction {
+  padding: 0 20px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.order-list .list-box .ins-introduction .main-induc {
+  margin-bottom: 20px;
+}
+.order-list .list-box .ins-introduction .main-induc .title {
+  padding-left: 15px;
+  position: relative;
+  border-bottom: 1px solid #ededed;
+}
+.order-list .list-box .ins-introduction .main-induc .title::before {
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 0;
+  width: 4px;
+  height: 25px;
+  background-color: #2bb404;
+}
+.order-list .list-box .ins-introduction .main-induc .content {
+  color: #9c9c9c;
+}
+.order-list .list-box .ins-introduction .main-induc .ins-box li {
+  float: left;
+  text-align: center;
+  color: #9c9c9c;
+  width: 11.1%;
+}
+.order-list .list-box .ins-introduction .main-induc .ins-box li img {
+  width: 40px;
+  height: 40px;
+  margin: 10px auto;
+}
+.order-list .list-box .location {
+  padding: 0 20px 20px 20px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.order-list .list-box .location #map {
+  width: 100%;
+  height: 320px;
+  margin-bottom: 10px;
+}
+.order-list .list-box .evaluate {
+  padding: 0 20px 20px 20px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.order-list .list-box .evaluate .comment {
+  margin-top: 14px;
+  background-color: #ff9d12;
+  padding: 12px 14px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.order-list .list-box .evaluate .evaluate-box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.order-list .list-box .evaluate .evaluate-box .comprehensive {
+  width: 212px;
+  border-right: 1px solid #ededed;
+}
+.order-list .list-box .evaluate .evaluate-box .detail {
+  width: 540px;
+}
+.order-list .list-box .evaluate .evaluate-box .detail li {
+  float: left;
+  width: 50%;
+  font-size: 14px;
+  line-height: 42px;
+}
+.order-list .list-box .evaluate .comment-box .comment-tab {
+  border-bottom: 1px solid #ededed;
+}
+.order-list .list-box .evaluate .comment-box .comment-tab li {
+  float: left;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+.order-list .list-box .evaluate .comment-box .comment-tab li.active {
+  background-color: #2bb404;
+  color: #fff;
+}
+.order-list .list-box .evaluate .comment-box .comment-list .comment-listing {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom: 1px solid #ededed;
+}
+.order-list .list-box .evaluate .comment-box .comment-list .comment-listing img {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.order-list .list-box .evaluate .comment-box .comment-list .comment-listing .comment-detail {
+  width: 692px;
+}
+.order-list .list-box .evaluate .comment-box .comment-list .comment-listing .comment-detail .comment-detail-top {
+  margin-bottom: 10px;
+}
+.order-list .list-box .evaluate .pagination {
+  margin-top: 20px;
+}
+.order-list .list-box .evaluate .pagination ul > li {
+  float: left;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #ededed;
+  margin-right: 10px;
+  background-color: #fff;
+}
+.order-list .list-box .evaluate .pagination ul > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.order-list .list-box .evaluate .pagination ul > li.next {
+  width: 65px;
+}
+.order-list .list-box .evaluate .pagination span {
+  display: inline-block;
+  height: 35px;
+  line-height: 35px;
+}
+.order-list .list-box .evaluate .pagination span input {
+  width: 35px;
+  height: 35px;
+  padding-left: 8px;
+  margin: 0 4px;
+}
+.order-list .list-box .evaluate .pagination .sure {
+  display: inline-block;
+  width: 65px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.order-list .list-box .ins-info {
+  padding: 0 20px 20px 20px;
+  border: 1px solid #ededed;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.order-list .list-box .ins-info .ins-info-box {
+  margin-top: 20px;
+}
+.order-list .list-box .ins-info .ins-info-box .title {
+  padding-left: 15px;
+  position: relative;
+}
+.order-list .list-box .ins-info .ins-info-box .title::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 4px;
+  height: 25px;
+  background-color: #2bb404;
+}
+.order-list .list-box .ins-info .ins-info-box .ins-info-boxing {
+  width: 50%;
+  padding-right: 40px;
+}
+.order-list .list-box .ins-info .ins-info-box .ins-info-boxing .info-list {
+  margin-top: 20px;
+}
+.order-list .list-box .ins-info .ins-info-box .ins-info-boxing .info-list li {
+  position: relative;
+  padding-left: 20px;
+  line-height: 24px;
+  color: #9c9c9c;
+}
+.order-list .list-box .ins-info .ins-info-box .ins-info-boxing .info-list li a {
+  display: inline-block;
+  width: 230px;
+}
+.order-list .list-box .ins-info .ins-info-box .ins-info-boxing .info-list li:before {
+  content: '●';
+  position: absolute;
+  left: 0;
+  color: #ebebeb;
+}
 .order-list .recommend-box {
   width: 376px;
 }
