@@ -393,7 +393,6 @@
 
         //附近养老院
         .nursing-home {
-            padding: 20px;
             .top-nav {
                 padding: 0 6px;
                 border-bottom: 2px solid @green;
@@ -414,6 +413,30 @@
                             margin-left: -8.9px;
                         }
                     }
+                }
+            }
+        }
+        .homes {
+            padding: 30px;
+            background-color: #fff;
+            li {
+                .fl;
+                border:1px solid @border;
+                margin-bottom: 25px;
+                &:not(:nth-child(3n)) {
+                    margin-right: 25px;
+                }
+                img {
+                    width: 230px;
+                    height: 151px;
+                }
+                .des {
+                    padding: 0 10px;
+                }
+                &:hover {
+                    box-shadow: 0 2px 8px rgba(238,136,0,.3);
+                    transform: scale(1.01);
+                    transition: all 0.3s;
                 }
             }
         }

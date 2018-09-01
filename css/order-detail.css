@@ -851,9 +851,6 @@ footer .about .contract .contract-button {
   left: 0;
   color: #ebebeb;
 }
-.order-list .list-box .nursing-home {
-  padding: 20px;
-}
 .order-list .list-box .nursing-home .top-nav {
   padding: 0 6px;
   border-bottom: 2px solid #2bb404;
@@ -875,6 +872,30 @@ footer .about .contract .contract-button {
   bottom: -23px;
   left: 50%;
   margin-left: -8.9px;
+}
+.order-list .list-box .homes {
+  padding: 30px;
+  background-color: #fff;
+}
+.order-list .list-box .homes li {
+  float: left;
+  border: 1px solid #ededed;
+  margin-bottom: 25px;
+}
+.order-list .list-box .homes li:not(:nth-child(3n)) {
+  margin-right: 25px;
+}
+.order-list .list-box .homes li img {
+  width: 230px;
+  height: 151px;
+}
+.order-list .list-box .homes li .des {
+  padding: 0 10px;
+}
+.order-list .list-box .homes li:hover {
+  box-shadow: 0 2px 8px rgba(238, 136, 0, 0.3);
+  transform: scale(1.01);
+  transition: all 0.3s;
 }
 .order-list .recommend-box {
   width: 376px;
