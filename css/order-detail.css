@@ -851,6 +851,31 @@ footer .about .contract .contract-button {
   left: 0;
   color: #ebebeb;
 }
+.order-list .list-box .nursing-home {
+  padding: 20px;
+}
+.order-list .list-box .nursing-home .top-nav {
+  padding: 0 6px;
+  border-bottom: 2px solid #2bb404;
+}
+.order-list .list-box .nursing-home .top-nav li {
+  width: 100%;
+  position: relative;
+  float: left;
+  font-size: 18px;
+  line-height: 60px;
+  margin-right: 30px;
+}
+.order-list .list-box .nursing-home .top-nav li.active {
+  color: #2bb404;
+}
+.order-list .list-box .nursing-home .top-nav li.active::after {
+  content: '▲';
+  position: absolute;
+  bottom: -23px;
+  left: 50%;
+  margin-left: -8.9px;
+}
 .order-list .recommend-box {
   width: 376px;
 }
