@@ -495,9 +495,9 @@ footer .about .contract .contract-button {
 #order-one,
 #order-two {
   width: 479px;
-  margin: 0 auto 20px;
+  margin: 0 auto;
   background-color: #fff;
-  border-top: 6px solid #2bb404;
+  border-top: 10px solid #2bb404;
   color: #9c9c9c;
 }
 #order-one .imp,
@@ -535,12 +535,12 @@ footer .about .contract .contract-button {
   -moz-border-radius: 4px;
   padding: 10px;
 }
-#order-one .content .code input,
-#order-two .content .code input {
+#order-one .content .code input[type="text"],
+#order-two .content .code input[type="text"] {
   width: 60%;
 }
-#order-one .content .code a,
-#order-two .content .code a {
+#order-one .content .code input[type="button"],
+#order-two .content .code input[type="button"] {
   display: inline-block;
   width: 140px;
   height: 50px;
@@ -548,6 +548,8 @@ footer .about .contract .contract-button {
   text-align: center;
   background-color: #2bb404;
   color: #fff;
+  border: none;
+  cursor: pointer;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -569,7 +571,7 @@ footer .about .contract .contract-button {
 #order-one .content .contract,
 #order-two .content .contract {
   width: 200px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 #order-one .content .contract .icon-tel,
 #order-two .content .contract .icon-tel {
@@ -612,6 +614,35 @@ body .top-bar {
   width: 78px;
   text-align: right;
   margin-right: 20px;
+}
+.order-list .list-box .comment-box .stars {
+  height: 60px;
+}
+.order-list .list-box .comment-box .stars .star1 {
+  display: inline-block;
+  margin-top: 13px;
+  width: 33px;
+  height: 32px;
+  background: url('../img/star2.png');
+  cursor: pointer;
+}
+.order-list .list-box .comment-box .stars .star1.active {
+  background: url('../img/star1.png');
+}
+.order-list .list-box .comment-box .stars .star3 {
+  display: inline-block;
+  margin-top: 10px;
+  width: 41px;
+  height: 40px;
+  background: url('../img/star4.png');
+  cursor: pointer;
+}
+.order-list .list-box .comment-box .stars .star3.active {
+  background: url('../img/star3.png');
+}
+.order-list .list-box .comment-box .stars + .red {
+  margin-left: 20px;
+  color: #d81e06;
 }
 .order-list .list-box .comment-box .comment-area textarea {
   width: 615px;

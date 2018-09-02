@@ -70,10 +70,71 @@
             <h2 class="green f24">请填写点评信息</h2>
             <div class="comment-box line-60 grey">
                 <p><span class="title">点评机构：<i class="imp">*</i></span> 北京民众护理医院</p>
-                <p><span class="title">设施环境：<i class="imp">*</i></span> 北京民众护理医院</p>
-                <p><span class="title">护理水平：<i class="imp">*</i></span> 北京民众护理医院</p>
-                <p><span class="title">服务水平：<i class="imp">*</i></span> 北京民众护理医院</p>
-                <p><span class="title">位置评分：<i class="imp">*</i></span> 北京民众护理医院</p>
+                <p class="clearfix">
+                    <span class="title fl">
+                        总体评价：<i class="imp">*</i>
+                    </span>
+                    <span class="fl stars">
+                        <i class="star star3 active"></i>
+                        <i class="star star3 active"></i>
+                        <i class="star star3 active"></i>
+                        <i class="star star3 active"></i>
+                        <i class="star star3"></i>
+                    </span>
+                    <span class="red"></span>
+                </p>
+                <p class="clearfix">
+                    <span class="title fl">
+                         设施环境：<i class="imp">*</i>
+                    </span>
+                    <span class="fl stars">
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                    </span>
+                    <span class="red"></span>
+                </p>
+                <p class="clearfix">
+                    <span class="title fl">
+                         护理水平：<i class="imp">*</i>
+                    </span>
+                    <span class="fl stars">
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                    </span>
+                    <span class="red"></span>
+                </p>
+                <p class="clearfix">
+                    <span class="title fl">
+                         服务水平：<i class="imp">*</i>
+                    </span>
+                    <span class="fl stars">
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                    </span>
+                    <span class="red"></span>
+                </p>
+                <p class="clearfix">
+                    <span class="title fl">
+                         位置评分：<i class="imp">*</i>
+                    </span>
+                    <span class="fl stars">
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                    </span>
+                    <span class="red"></span>
+                </p>
                 <div class="comment-area clearfix">
                     <span class="fl title" style="line-height:108px;">评价：<i class="imp">*</i></span>
                     <textarea class="fl"></textarea>
@@ -111,7 +172,8 @@
             <div class="tips">
                 <p>点评和打分都将是其他网友的参考依据，并影响该商户评价。</p>
                 <p>· 发表的点评可以得到2-6点数量的积分。 <a href="##">什么是积分?</a></p>
-                <p>· 请发布真实、客观的本人消费体验评价。如您受到威逼、利诱如优惠等干扰而发布的点评或并非本人体验的虚假/恶意 点评，则点评视为违规，同时影响您的信誉度。更多请见 <a href="##">这里的说明</a> 。</p>
+                <p>· 请发布真实、客观的本人消费体验评价。如您受到威逼、利诱如优惠等干扰而发布的点评或并非本人体验的虚假/恶意 点评，则点评视为违规，同时影响您的信誉度。更多请见 <a href="##">这里的说明</a>
+                    。</p>
             </div>
         </div>
         <div class="recommend-box fr">
@@ -227,11 +289,39 @@
     <script src="./js/common.js"></script>
     <script>
         $(function () {
-            // 评价的提示信息
-            $('.comment-box textarea').on('input',function(e) {
-                if(e.target.value.length<15) {
-                    $('.comment-box').find('.error').show().siblings('.success').hide()
+            // 评价特效
+            $('.stars .star').on('mouseover',function(){
+                // console.log($(this).index())
+                var text = {};
+                $(this).addClass('active')
+                $(this).prevAll().addClass('active');
+                $(this).nextAll().removeClass('active');
+                if($(this).hasClass('star3')) {
+                    text = {
+                        0: '不满意',
+                        1: '一般',
+                        2: '不错',
+                        3: '满意',
+                        4: '超棒',
+                    }[$(this).index()]
                 }else {
+                    text = {
+                        0: '不佳',
+                        1: '一般',
+                        2: '不错',
+                        3: '满意',
+                        4: '超棒',
+                    }[$(this).index()]
+                }
+                $(this).parent().next('.red').text(text)
+            })
+
+
+            // 评价的提示信息
+            $('.comment-box textarea').on('input', function (e) {
+                if (e.target.value.length < 15) {
+                    $('.comment-box').find('.error').show().siblings('.success').hide()
+                } else {
                     $('.comment-box').find('.success').show().siblings('.error').hide()
                 }
             })

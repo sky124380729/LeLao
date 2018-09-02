@@ -25,6 +25,35 @@ body {
                 text-align: right;
                 margin-right: 20px;
             }
+            .stars {
+                height: 60px;
+                .star1 {
+                    display: inline-block;
+                    margin-top: 13px;
+                    width: 33px;
+                    height: 32px;
+                    background: url('../img/star2.png');
+                    cursor: pointer;
+                }
+                .star1.active {
+                    background: url('../img/star1.png');
+                }
+                .star3 {
+                    display: inline-block;
+                    margin-top: 10px;
+                    width: 41px;
+                    height: 40px;
+                    background: url('../img/star4.png');
+                    cursor: pointer;
+                }
+                .star3.active {
+                    background: url('../img/star3.png');
+                }
+            }
+            .stars+.red {
+                margin-left: 20px;
+                color:#d81e06;
+            }
             .comment-area {
                 textarea {
                     width: 615px;
