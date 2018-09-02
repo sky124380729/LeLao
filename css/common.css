@@ -17,6 +17,9 @@
   color: #9c9c9c;
 }
 /* 定义字体大小 */
+.f12 {
+  font-size: 12px;
+}
 .f14 {
   font-size: 14px;
 }

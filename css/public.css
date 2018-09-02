@@ -27,6 +27,9 @@
 .f18 {
   font-size: 18px;
 }
+.f20 {
+  font-size: 20px;
+}
 .f24 {
   font-size: 24px;
 }
@@ -37,7 +40,7 @@
   color: #ff001e;
 }
 .green {
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 .grey {
   color: #9c9c9c;
@@ -118,7 +121,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 label {
   cursor: pointer;
@@ -139,7 +142,7 @@ input[type="checkbox"]:checked::after {
   position: absolute;
   left: 2px;
   top: -2px;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 /* 公共头部 */
 .top-bar {
@@ -175,14 +178,14 @@ input[type="checkbox"]:checked::after {
   font-size: 16px;
   width: 346px;
   height: 100%;
-  border: 2px solid rgba(98, 0, 255, 0.233);
+  border: 2px solid #2bb404;
   padding: 15px;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
 .search-bar .search-box a {
   display: block;
-  background-color: rgba(98, 0, 255, 0.233);
+  background-color: #2bb404;
   color: #fff;
   font-size: 23px;
   padding: 0 20px;
@@ -196,23 +199,23 @@ input[type="checkbox"]:checked::after {
   margin: 0 4px;
 }
 .search-bar .login-box .iconfont {
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
   font-size: 24px;
   position: relative;
   top: 2px;
 }
 .search-bar .login-box .login {
-  border: 1px solid rgba(98, 0, 255, 0.233);
+  border: 1px solid #2bb404;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
   padding: 2px 16px;
   margin: 0 4px;
 }
 .nav-bar {
   line-height: 46px;
-  background-color: rgba(98, 0, 255, 0.233);
+  background-color: #2bb404;
 }
 .nav-bar li {
   float: left;
@@ -225,7 +228,7 @@ input[type="checkbox"]:checked::after {
 /* 部分内容 */
 .main-section .top-nav {
   padding: 0 6px;
-  border-bottom: 2px solid rgba(98, 0, 255, 0.233);
+  border-bottom: 2px solid #2bb404;
 }
 .main-section .top-nav li {
   position: relative;
@@ -235,7 +238,7 @@ input[type="checkbox"]:checked::after {
   margin-right: 30px;
 }
 .main-section .top-nav li.active {
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 .main-section .top-nav li.active::after {
   content: '▲';
@@ -286,7 +289,7 @@ footer .slogan li {
 }
 footer .slogan li h2 {
   font-size: 60px;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
   font-weight: 100;
 }
 footer .slogan li .des {
@@ -314,7 +317,7 @@ footer .about .contract dt {
   font-size: 22px;
 }
 footer .about .contract .contract-button {
-  background-color: rgba(98, 0, 255, 0.233);
+  background-color: #2bb404;
   color: #fff;
   padding: 4px 8px;
 }
@@ -364,7 +367,7 @@ footer .about .contract .contract-button {
   height: 50px;
   line-height: 50px;
   text-align: center;
-  background-color: rgba(98, 0, 255, 0.233);
+  background-color: #2bb404;
   color: #fff;
   font-size: 22px;
   border-radius: 4px;
@@ -386,9 +389,9 @@ footer .about .contract .contract-button {
   width: 52%;
   height: 60px;
   margin: 10px auto;
-  border: 1px solid rgba(98, 0, 255, 0.233);
+  border: 1px solid #2bb404;
   background: none;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
   cursor: pointer;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -400,7 +403,7 @@ footer .about .contract .contract-button {
 #getPasswordSuccess form .icon-ok {
   font-size: 48px;
   line-height: 80px;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 #login .login-by-phone,
 #register .login-by-phone,
@@ -417,7 +420,7 @@ footer .about .contract .contract-button {
   right: 18px;
   border: none;
   background: none;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
   cursor: pointer;
 }
 #login .other-way,
@@ -436,7 +439,7 @@ footer .about .contract .contract-button {
   line-height: 55px;
   margin: 0 5px;
   text-align: center;
-  border: 1px solid rgba(98, 0, 255, 0.233);
+  border: 1px solid #2bb404;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -446,14 +449,14 @@ footer .about .contract .contract-button {
 #getPassword .other-way a i,
 #getPasswordSuccess .other-way a i {
   font-size: 32px;
-  color: rgba(98, 0, 255, 0.233);
+  color: #2bb404;
 }
 #login .other-way a:hover,
 #register .other-way a:hover,
 #getPassword .other-way a:hover,
 #getPasswordSuccess .other-way a:hover {
   border-color: #fff;
-  background-color: rgba(98, 0, 255, 0.233);
+  background-color: #2bb404;
 }
 #login .other-way a:hover i,
 #register .other-way a:hover i,
