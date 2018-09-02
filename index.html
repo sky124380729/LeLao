@@ -70,7 +70,7 @@
             <div class="ad-left fl clearfix">
                 <div class="search-tabs fl">
                     <ul>
-                        <li class="nav-list">
+                        <li class="nav-list active">
                             <h4 class="f18">机构养老</h4>
                             <ul>
                                 <li class="nav-list-detail"><a href="#">养老院&emsp;|</a></li>
@@ -91,7 +91,7 @@
                                 <li class="nav-list-detail"><a href="#">护理院&emsp;|</a></li>
                             </ul>
                         </li>
-                        <li class="nav-list active">
+                        <li class="nav-list getOrder">
                             <h4 class="f18">定制养老方案</h4>
                             <ul>
                                 <li class="nav-list-detail"><a href="#">养老院&emsp;|</a></li>
@@ -101,7 +101,7 @@
                     </ul>
                 </div>
 
-                <div class="search-detail fr" style="display:none;">
+                <div class="search-detail fr noOrderTab">
                     <div class="blocks">
                         <h4 class="f18">城市</h4>
                         <ul class="clearfix">
@@ -138,7 +138,7 @@
                     </div>
                 </div>
 
-                <div class="search-detail fr">
+                <div class="search-detail fr getOrderTab" style="display:none;">
                     <div class="consult-box">
                         <h2 class="f18 center">专业养老顾问为您选择最佳养老服务</h2>
                         <ul class="clearfix">
@@ -928,9 +928,16 @@
     <script src="./js/common.js"></script>
     <script>
         $(function () {
-            // 手机号和验证码登录方式切换
-            $('.login-type .type-change').on('click', function () {
-                $(this).parents('.login-type').hide().siblings('.login-type').show();
+            //机构养老
+            $('.search-tabs .nav-list').on('mouseover',function(){
+                $(this).addClass('active').siblings().removeClass('active');
+                if($(this).hasClass('getOrder')) {
+                    $('.getOrderTab').show();
+                    $('.noOrderTab').hide();
+                }else {
+                    $('.getOrderTab').hide();
+                    $('.noOrderTab').show();
+                }
             })
         })
     </script>
