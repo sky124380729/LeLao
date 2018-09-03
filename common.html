@@ -1,5 +1,3 @@
-
-
 <!-- 登录 -->
 <div id="login" style="display: none;">
     <div class="top clearfix">
@@ -200,3 +198,160 @@
         </div>
     </form>
 </div>
+
+
+
+<!-- 图片第一种弹框样式 -->
+<div id="img-box-one" class="clearfix" style="display:none;">
+    <div class="big-img fl">
+        <p class="clearfix line-40">
+            <span class="fl f20">图片预览</span>
+            <span class="fr grey">外观<i><em class="orange" style="margin-left:10px;">1</em>/35张</i></span>
+        </p>
+        <img src="./img/list.png" alt="">
+    </div>
+    <div class="small-img fr">
+        <div class="top line-40 f20">
+            <a href="##" class="active">机构官方</a>
+            <a href="##">用户上传</a>
+        </div>
+        <div class="nav">
+            <ul class="clearfix">
+                <li class="active"><a href="##">所有(35)</a></li>
+                <li><a href="##">外观(5)</a></li>
+                <li><a href="##">内景(15)</a></li>
+                <li><a href="##">房间(8)</a></li>
+                <li><a href="##">其他(8)</a></li>
+            </ul>
+        </div>
+        <div class="img-list">
+            <ul class="clearfix">
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/recommend.jpg" alt="">
+                        <p class="content" style="display:none">外观</p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- 图片第一种弹框样式 -->
+<div id="img-box-two" class="clearfix" style="display:none;">
+    <p class="line-40 f20">
+        单间 <span class="orange">1</span>/2张
+    </p>
+    <div class="clearfix">
+        <img src="./img/recommend.jpg" alt="" class="big-img fl">
+        <div class="fr small-img">
+            <ul class="clearfix">
+                <li class="active">
+                    <a href="##">
+                        <img src="./img/list.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/list.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/list.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="##">
+                        <img src="./img/list.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        //图片框的tab切换
+        $('.small-img .top a,.small-img .nav li').on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active')
+        })
+
+        //图片框1hover样式
+        $('#img-box-one .img-list li').on('mouseenter', function () {
+            $(this).addClass('active').find('.content').show();
+        }).on('mouseleave', function () {
+            $(this).removeClass('active').find('.content').hide();
+        })
+
+        //图片框2hover样式
+        $('#img-box-two .small-img li').on('mouseenter', function () {
+            $(this).addClass('active');
+        }).on('mouseleave', function () {
+            $(this).removeClass('active');
+        })
+    })
+</script>
