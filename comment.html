@@ -75,10 +75,10 @@
                         总体评价：<i class="imp">*</i>
                     </span>
                     <span class="fl stars">
-                        <i class="star star3 active"></i>
-                        <i class="star star3 active"></i>
-                        <i class="star star3 active"></i>
-                        <i class="star star3 active"></i>
+                        <i class="star star3"></i>
+                        <i class="star star3"></i>
+                        <i class="star star3"></i>
+                        <i class="star star3"></i>
                         <i class="star star3"></i>
                     </span>
                     <span class="red"></span>
@@ -88,10 +88,10 @@
                          设施环境：<i class="imp">*</i>
                     </span>
                     <span class="fl stars">
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
                         <i class="star star1"></i>
                     </span>
                     <span class="red"></span>
@@ -101,10 +101,10 @@
                          护理水平：<i class="imp">*</i>
                     </span>
                     <span class="fl stars">
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
                         <i class="star star1"></i>
                     </span>
                     <span class="red"></span>
@@ -114,10 +114,10 @@
                          服务水平：<i class="imp">*</i>
                     </span>
                     <span class="fl stars">
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
                         <i class="star star1"></i>
                     </span>
                     <span class="red"></span>
@@ -127,10 +127,10 @@
                          位置评分：<i class="imp">*</i>
                     </span>
                     <span class="fl stars">
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
-                        <i class="star star1 active"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
+                        <i class="star star1"></i>
                         <i class="star star1"></i>
                     </span>
                     <span class="red"></span>
@@ -314,6 +314,9 @@
                     }[$(this).index()]
                 }
                 $(this).parent().next('.red').text(text)
+            })
+            $('.stars .star').on('click',function(){
+                $(this).siblings().off('mouseover')
             })
 
 
