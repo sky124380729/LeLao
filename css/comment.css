@@ -139,13 +139,18 @@ input[type="checkbox"] {
   border: 1px solid #888686;
   border-radius: 2px;
   cursor: pointer;
+  margin: 0 5px;
+}
+input[type="checkbox"]:checked {
+  background-color: #2bb404;
+  border-color: #2bb404;
 }
 input[type="checkbox"]:checked::after {
   content: '✔';
   position: absolute;
   left: 2px;
   top: -2px;
-  color: #2bb404;
+  color: #fff;
 }
 /* 公共头部 */
 .top-bar {
@@ -594,8 +599,8 @@ footer .about .contract .contract-button {
 #img-box-one {
   width: 952px;
   height: 380px;
+  margin-bottom: 20px;
   background-color: #fff;
-  margin: 50px auto;
   padding: 20px;
 }
 #img-box-one .big-img img {
@@ -669,7 +674,7 @@ footer .about .contract .contract-button {
   padding: 20px;
   width: 980px;
   height: 380px;
-  margin: 50px auto;
+  margin-bottom: 20px;
 }
 #img-box-two .big-img {
   width: 542px;

@@ -141,12 +141,16 @@ input[type="checkbox"] {
   cursor: pointer;
   margin: 0 5px;
 }
+input[type="checkbox"]:checked {
+  background-color: #2bb404;
+  border-color: #2bb404;
+}
 input[type="checkbox"]:checked::after {
   content: '✔';
   position: absolute;
   left: 2px;
   top: -2px;
-  color: #2bb404;
+  color: #fff;
 }
 /* 公共头部 */
 .top-bar {
